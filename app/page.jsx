@@ -12,14 +12,14 @@ export default function Home() {
         <div className="z-[10000]">
           <h1 className="text-[#242424] font-clashDisplay font-medium text-center text-[114.024px] leading-[156.419px] tracking-[0.997px]">
             <span className="pr-[220px]">
-              where we{" "}
+              where we
               <span className="text-[#FFF] not-italic px-[60px] leading-[57.419px] tracking-[1.14px] rounded-[797.488px] bg-[linear-gradient(259deg,_#9E95FF_3.48%,_#DAB5FF_67.29%)] font-semibold">
                 Ideate
               </span>
             </span>
             <br />
             <span className="pl-[390px]">
-              and{" "}
+              and
               <span className="text-[#FFF] px-[60px] not-italic leading-[57.419px] tracking-[1.14px] rounded-[797.488px] bg-[linear-gradient(259deg,_#9E95FF_3.48%,_#DAB5FF_67.29%)] font-semibold">
                 technicate
               </span>
@@ -38,7 +38,7 @@ export default function Home() {
         >
           <span className="text-center text-[20px] font-clashDisplay font-normal leading-[normal] capitalize text-[#F5F5F5]">
             scroll to see more
-          </span>{" "}
+          </span>
           <Image src={mouse} />
         </Link>
         <Image
