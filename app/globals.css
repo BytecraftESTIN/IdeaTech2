@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back {
+    background-image: url("../public/group.png"), linear-gradient(266deg, rgba(230, 246, 255, 0.50) 0%, rgba(215, 197, 255, 0.09) 100%);
+    background-size: cover;
+}
