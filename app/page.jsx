@@ -1,17 +1,17 @@
- import HomePage from "../components/HomePage";
-import Boxes from "/components/boxes";
-import Sponsors from "../components/sponsors";
-import Mentors from "../components/mentors";
-import Agenda from "/components/agenda";
+import Boxes from "../components/Boxes";
+import HomePage from "../components/HomePage";
+import Sponsors from "../components/Sponsors";
+import Mentors from "../components/Mentors";
+import Agenda from "../components/Agenda";
 
 export default function Home() {
   return (
-    <main className="">
-        <HomePage />
-        <Boxes />
-        <Sponsors />
-        <Mentors />
-        <Agenda />
+    <main>
+      <HomePage />
+      <Boxes />
+      <Sponsors />
+      <Mentors />
+      <Agenda />
     </main>
   );
 }
