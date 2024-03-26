@@ -1,4 +1,4 @@
-import { ClashDisplay, inter } from "@/utils/customFonts";
+import { ClashDisplay, inter } from "../utils/customFonts";
 import "./globals.css";
 
 export const metadata = {
