@@ -5,7 +5,7 @@ import Vector from "../public/Vector.png";
 
 const Home = () => {
   return (
-    <section className="h-screen w-screen flex justify-center items-center">
+    <section className="w-[100vw] h-[100vh] flex justify-center items-center">
       <div className="w-[90vw] h-[80vh] flex flex-col justify-center items-center back rounded-[40px] relative">
         <Image src={logos} alt="two logo" className="mb-[40px] w-[120px]" />
         <div className="z-[10000]">
@@ -28,7 +28,7 @@ const Home = () => {
           </h1>
         </div>
         <p className="z-[99999] text-[#4D4D4D] font-inter text-center text-[18px] font-semibold leading-[27px] mt-[60px] mb-[32px]">
-          Let's break it down for you in the most simple and <br />{" "}
+          Let&apos;s break it down for you in the most simple and <br />{" "}
           straightforward way possible!
         </p>
         <a
