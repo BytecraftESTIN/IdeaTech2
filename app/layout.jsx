@@ -1,4 +1,4 @@
-import { ClashDisplay, inter } from "@/utils/customFonts";
+import { ClashDisplay, inter } from "../utils/customFonts";
 import "./globals.css";
 
 export const metadata = {
@@ -9,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${ClashDisplay.variable} ${inter.variable}`}>{children}</body>
+      <body className={`${ClashDisplay.variable} ${inter.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
