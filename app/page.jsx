@@ -6,7 +6,7 @@ import Agenda from "../components/Agenda";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex w-[500vw]">
       <HomePage />
       <Boxes />
       <Sponsors />
