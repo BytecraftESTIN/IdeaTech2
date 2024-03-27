@@ -10,7 +10,7 @@ const HomePage = () => {
       <div className="w-[90vw] h-[86vh] flex flex-col justify-center items-center back rounded-[40px] relative">
         <Image src={logos} alt="two logo" className="w-[100px]" />
         <div>
-          <h1 className="text-[#242424] mt-[30px] font-clashDisplay font-medium text-center text-[80.024px] leading-[104px] tracking-[0.997px]">
+          <h1 className="text-[#242424] mt-[30px] font-clashDisplay font-medium text-center text-[80.024px] leading-[110px] tracking-[0.997px]">
             <span className="pr-[200px]">
               where we
               <span className="text-[#FFF] not-italic z-[11111] px-[30px] relative ml-[20px] leading-[57.419px] tracking-[1.14px] rounded-[797.488px] bg-[linear-gradient(259deg,_#9E95FF_3.48%,_#DAB5FF_67.29%)] font-semibold">
