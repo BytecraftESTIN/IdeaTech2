@@ -2,14 +2,15 @@ import Image from "next/image";
 import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
 import Vector from "../public/Vector.png";
+import '../app/globals.css'
 
 const HomePage = () => {
   return (
-    <section className="h-screen w-[100%] flex justify-center items-center">
-      <div className="w-[90vw] h-[84vh] flex flex-col justify-center items-center back rounded-[40px] relative">
+    <section className="h-screen w-[100%] flex justify-center items-center section">
+      <div className="w-[90vw] h-[86vh] flex flex-col justify-center items-center back rounded-[40px] relative">
         <Image src={logos} alt="two logo" className="w-[100px]" />
         <div>
-          <h1 className="text-[#242424] mt-[30px] font-clashDisplay font-medium text-center text-[80.024px] leading-[110.419px] tracking-[0.997px]">
+          <h1 className="text-[#242424] mt-[30px] font-clashDisplay font-medium text-center text-[80.024px] leading-[104px] tracking-[0.997px]">
             <span className="pr-[200px]">
               where we
               <span className="text-[#FFF] not-italic z-[11111] px-[30px] relative ml-[20px] leading-[57.419px] tracking-[1.14px] rounded-[797.488px] bg-[linear-gradient(259deg,_#9E95FF_3.48%,_#DAB5FF_67.29%)] font-semibold">
@@ -24,10 +25,10 @@ const HomePage = () => {
               </span>
             </span>
             <br />
-            <span className="text-center z-[-1]">together</span>
+            <span className="text-center relative z-[11111]">together</span>
           </h1>
         </div>
-        <p className="z-[99999] text-[#4D4D4D] font-inter text-center text-[14px] font-medium leading-[27px] mt-[20px] mb-[20px]">
+        <p className="z-[99999] text-[#4D4D4D] font-inter text-center text-[13px] font-medium leading-[27px] mt-[28px] mb-[20px]">
           Let's break it down for you in the most simple and <br />{" "}
           straightforward way possible!
         </p>
