@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html {
+    cursor: url('../public/cursor.png'), auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     overflow: auto;
@@ -21,8 +22,8 @@ body::-webkit-scrollbar {
 .boxes {
     padding: 20px 20vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr) 0 ;
-    grid-template-rows: repeat(3, 1fr) repeat(2, 0);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 27px;
     grid-row-gap: 27px; 
 }

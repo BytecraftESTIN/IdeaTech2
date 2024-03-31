@@ -1,4 +1,3 @@
-import Boxes from "../components/Boxes";
 import HomePage from "../components/HomePage";
 import Sponsors from "../components/Sponsors";
 import Mentors from "../components/Mentors";
