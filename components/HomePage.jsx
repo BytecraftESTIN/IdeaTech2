@@ -29,7 +29,7 @@ const HomePage = () => {
           </h1>
         </div>
         <p className="z-[99999] text-[#4D4D4D] font-inter text-center text-[13px] font-medium leading-[27px] mt-[28px] mb-[20px]">
-          Let's break it down for you in the most simple and <br />{" "}
+          Let&apos;s break it down for you in the most simple and <br />{" "}
           straightforward way possible!
         </p>
         <a
