@@ -2,7 +2,7 @@ import Image from "next/image";
 import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
 import Vector from "../public/Vector.png";
-import '../app/globals.css'
+import "../app/globals.css";
 
 const HomePage = () => {
   return (
@@ -48,7 +48,7 @@ const HomePage = () => {
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
