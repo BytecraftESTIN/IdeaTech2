@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html {
+    cursor: url('../public/cursor.png'), auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     overflow: auto;
