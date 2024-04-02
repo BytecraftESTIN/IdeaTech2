@@ -8,6 +8,9 @@ html {
     scroll-snap-type: x mandatory;
     overflow: auto;
 }
+a {
+   cursor: url('../public/cursor.png'), auto; 
+}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -20,7 +23,7 @@ body::-webkit-scrollbar {
 }
 
 .boxes { 
-     display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px 30px;
@@ -57,4 +60,5 @@ body::-webkit-scrollbar {
      }
       
 }
+  
   

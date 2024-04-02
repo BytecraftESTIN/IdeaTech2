@@ -8,6 +8,7 @@ import sponsorImage from "../public/sponsor.png";
 import Vector from "../public/Vector.png";
 import "../app/globals.css";
 import Image from "next/image";
+
 const Boxes_Section = () => {
   return (
     <section className="h-screen w-[100%] flex justify-center items-center section">
