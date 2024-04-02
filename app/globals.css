@@ -8,6 +8,9 @@ html {
     scroll-snap-type: x mandatory;
     overflow: auto;
 }
+a {
+    cursor: url('../public/cursor.png'), auto; 
+}
 body::-webkit-scrollbar {
     display: none;
 }

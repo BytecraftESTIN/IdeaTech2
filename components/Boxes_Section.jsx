@@ -9,8 +9,8 @@ import "../app/globals.css";
 import Image from "next/image";
 const Boxes_Section = () => {
   return (
-    <section id="boxes" className="h-screen back w-[100%] flex justify-center items-center section">
-      <div className="w-[90vw] h-[86vh]  rounded-[40px] relative flex items-center justify-center">
+    <section id="boxes" className="h-screen w-[100%] flex justify-center items-center section">
+      <div className="w-[90vw] h-[86vh] rounded-[40px] relative flex items-center justify-center back">
         <Image
           src={logos}
           alt="two logo"

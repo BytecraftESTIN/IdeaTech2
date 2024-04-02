@@ -2,7 +2,9 @@ import Image from "next/image";
 import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
 import Vector from "../public/Vector.png";
+import TypeWriter from "../utils/TypeWriter";
 import "../app/globals.css";
+import CustomCursor from "../utils/customCursor";
 
 const HomePage = () => {
   return (
@@ -14,18 +16,18 @@ const HomePage = () => {
             <span className="pr-[200px]">
               where we
               <span className="text-[#FFF] not-italic z-[11111] px-[30px] relative ml-[20px] leading-[57.419px] tracking-[1.14px] rounded-[797.488px] bg-[linear-gradient(259deg,_#9E95FF_3.48%,_#DAB5FF_67.29%)] font-semibold">
-                Ideate
+                <TypeWriter text={"Ideate"} />
               </span>
             </span>
             <br />
             <span className="pl-[230px]">
               and
               <span className="text-[#FFF] px-[30px] not-italic z-[11111] relative ml-[20px] leading-[57.419px] tracking-[1.14px] rounded-[797.488px] bg-[linear-gradient(259deg,_#9E95FF_3.48%,_#DAB5FF_67.29%)] font-semibold">
-                technicate
+                <TypeWriter text={"technicate"} />
               </span>
             </span>
             <br />
-            <span className="text-center relative z-[11111]">together</span>
+            <span className="text-center relative z-[5]">together</span>
           </h1>
         </div>
         <p className="z-[99999] text-[#4D4D4D] font-inter text-center text-[13px] font-medium leading-[27px] mt-[28px] mb-[20px]">
@@ -34,18 +36,21 @@ const HomePage = () => {
         </p>
         <a
           href="#boxes"
-          className="cursor-pointer z-[1000] flex w-[504px] h-[54px] justify-center items-center gap-[20px] rounded-[20px] bg-[radial-gradient(70.71%_70.71%_at_50%_50%,_#303030_0%,_#000_100%)]"
+          className="z-[1000] flex w-[504px] h-[54px] justify-center items-center gap-[40px] rounded-[20px] bg-[radial-gradient(70.71%_70.71%_at_50%_50%,_#303030_0%,_#000_100%)]"
         >
           <span className="text-center text-[16px] font-clashDisplay font-normal leading-[normal] capitalize text-[#F5F5F5]">
             scroll to see more
           </span>
-          <Image src={mouse} />
+          <Image src={mouse} className="animation-cursor" />
         </a>
         <Image
           src={Vector}
           alt="Vector"
-          className="absolute w-[100vw] top-[40px]"
+          className="absolute w-[100vw] top-[40px] z-10"
         />
+        <CustomCursor name={'Rayane'} classDiv={'absolute top-0'} classCursor={''} classForName={'rounded-[8px] p-[10px] border-[1.2px] border-[solid] border-[var(--WHITE,#FFF)] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[14px] font-semibold leading-[21px]'} />
+        <CustomCursor name={'Iyad'} classDiv={'absolute bottom-0'} classCursor={''} classForName={'rounded-[8px] border-[1.2px] border-[solid] p-[10px] border-[var(--WHITE,#FFF)] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[14px] font-semibold leading-[21px]'}  />
+        <CustomCursor name={'Said'} classDiv={'absolute left-0'} classCursor={''} classForName={'rounded-[8px] border-[1.2px] border-[solid] py-[4px] border-[var(--WHITE,#FFF)] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[14px] font-semibold leading-[21px]'}  />
       </div>
     </section>
   );
