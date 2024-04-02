@@ -7,10 +7,11 @@ import sponsorImage from "../public/sponsor.png";
 import Vector from "../public/Vector.png";
 import "../app/globals.css";
 import Image from "next/image";
+
 const Boxes_Section = () => {
   return (
-    <section id="boxes" className="h-screen back w-[100%] flex justify-center items-center section">
-      <div className="w-[90vw] h-[86vh]  rounded-[40px] relative flex items-center justify-center">
+    <section id="boxes" className="h-screen w-[100%] flex justify-center items-center section">
+      <div className="w-[90vw] h-[86vh] rounded-[40px] relative flex items-center justify-center back">
         <Image
           src={logos}
           alt="two logo"
@@ -19,7 +20,7 @@ const Boxes_Section = () => {
         <Image
           src={Vector}
           alt="Vector"
-          className="absolute z-10 w-[100vw] top-[40px]"
+          className="absolute z-30 w-[100vw] top-[60px]"
         />
         <section className="boxes h-full py-[30px] w-[65%]">
           <article className=" h-full flex flex-col gap-[5px] w-full py-[16px] rounded-[32px]  bg-[#B8CEDC] box1">
@@ -64,7 +65,7 @@ const Boxes_Section = () => {
               </p>
             </div>
           </article>
-          <article className=" h-full w-full z-50 flex items-center flex-col rounded-[32px] bg-[#F682A5] box4">
+          <article className="z-[20] h-full w-full z-50 flex items-center flex-col rounded-[32px] bg-[#F682A5] box4">
             <div className="px-[26px] pt-[26px]"> 
               <h1 className="text-[#4A411E] text-[26px] font-[600]">Mentors</h1>
               <p className="text-[#4A411E] text-[16px] font-[500]">Ready to lead you every step on your journey!</p>

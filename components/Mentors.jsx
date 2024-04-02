@@ -1,3 +1,4 @@
+import TypeWriter from "@/utils/TypeWriter";
 import "../app/globals.css";
 
 const Mentors = () => {
@@ -8,6 +9,7 @@ const Mentors = () => {
     >
       Mentors
     </section>
+    
   );
 };
 
