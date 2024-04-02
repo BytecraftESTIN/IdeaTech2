@@ -20,7 +20,7 @@ const Boxes_Section = () => {
         <Image
           src={Vector}
           alt="Vector"
-          className="absolute z-30 w-[100vw] top-[40px]"
+          className="absolute z-30 w-[100vw] top-[60px]"
         />
         <section className="boxes h-full py-[30px] w-[65%]">
           <article className=" h-full flex flex-col gap-[5px] w-full py-[16px] rounded-[32px]  bg-[#B8CEDC] box1">

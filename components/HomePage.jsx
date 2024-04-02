@@ -49,7 +49,7 @@ const HomePage = () => {
         <Image
           src={Vector}
           alt="Vector"
-          className="absolute w-[100vw] top-[40px] z-10"
+          className="absolute w-[100vw] top-[60px] z-10"
         />
         <CustomCursor name={'Rayane'} classDiv={'absolute right-[280px] top-[70px] z-[50] pl-[50px]'} classCursor={'w-[30px] rotate-[deg]'} classForName={'rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold'} />
         <CustomCursor name={'Iyad'} classDiv={'absolute right-[200px] bottom-[40%] z-[50]'} classCursor={'w-[30px]'} classForName={'rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold'}  />
