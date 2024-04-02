@@ -11,6 +11,7 @@ module.exports = {
         inter: ["var(--font-inter)"],
         clashDisplay: ["var(--font-clash-display)"],
       },
+      
     },
   },
   plugins: [],
