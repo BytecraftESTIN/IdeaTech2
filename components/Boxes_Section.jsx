@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Boxes_Section = () => {
   return (
-    <section className="h-screen w-[100%] flex justify-center items-center section">
+    <section id="boxes" className="h-screen w-[100%] flex justify-center items-center section">
       <div className="w-[90vw] back h-[86vh]  rounded-[40px] relative flex items-center justify-center">
         <Image
           src={logos}
@@ -21,7 +21,7 @@ const Boxes_Section = () => {
         <Image
           src={Vector}
           alt="Vector"
-          className="absolute z-10 w-full [100vw] -rotate-180 top-[40px]"
+          className="absolute z-10 w-full [100vw] top-[40px]"
         />
         <section className="boxes max-w-[900px]  px-[13px] h-full py-[10px]">
           <article className=" h-full flex flex-col gap-[5px] w-full py-[16px] rounded-[32px]  bg-[#B8CEDC] box1">

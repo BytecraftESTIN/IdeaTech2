@@ -45,20 +45,3 @@ body::-webkit-scrollbar {
   .box5 { grid-area: box5; }
   
   .box6 { grid-area: box6; }
-
-@media (max-width: 800px){
-    .boxes {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .box1, .box2, .box3, .box4, .box5, .box6 {
-        width: 200px;
-        height: 200px;
-     }
-      
-}
-  
-  
