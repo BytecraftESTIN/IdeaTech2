@@ -6,7 +6,6 @@ import mouse from "../public/mouse.svg";
 import Vector from "../public/Vector.png";
 import TypeWriter from "../utils/TypeWriter";
 import CustomCursor from "../utils/CustomCursor";
-import { motion } from 'framer-motion';
 import "../app/globals.css";
 
 
