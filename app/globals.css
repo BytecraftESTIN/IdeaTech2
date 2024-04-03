@@ -21,7 +21,14 @@ body::-webkit-scrollbar {
     background-image: url("../public/group.png"), linear-gradient(266deg, rgba(230, 246, 255, 0.50) 0%, rgba(215, 197, 255, 0.09) 100%);
     background-size: cover;
 }
-
+.Box-Title{
+    font-size: 24px;
+    z-index: 1000;
+}
+.Box-Desc{
+    z-index: 1000;
+    font-size: 16px;
+}
 .boxes { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -45,20 +52,51 @@ body::-webkit-scrollbar {
   .box5 { grid-area: box5; }
   
   .box6 { grid-area: box6; }
-
-@media (max-width: 800px){
+.When-Light{
+    @apply translate-x-[60%]  w-[300px] absolute top-[-15%]  -rotate-[35deg] px-[26px]
+}
+@media (max-width: 786px){
     .boxes {
 
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
 
-    .box1, .box2, .box3, .box4, .box5, .box6 {
+     .box2, .box3, .box4, .box5, .box6 {
         width: 200px;
-        height: 200px;
+        height: 250px;
      }
-      
+     .box1{
+        width: 200px;
+        height: 300px;
+     }
+     .When-Light{
+        @apply translate-x-0
+     }
+     .Box-Desc{
+        font-size: 12px;
+     }
+     .Box-Title{
+        font-size: 16px;
+    }
+    .Box-About{
+        order: -1;
+        position: relative;
+        min-width: 100%;
+        transform: translate(-5%,0);
+    }
+    .Box-About-container{
+        flex-direction: column;;
+        justify-content: space-between;
+        align-items: start;
+        overflow: visible;
+    }
 }
   
-  
+@media (max-width: 700px){
+    .boxes {
+        scale: 0.7;
+    }
+}
