@@ -3,33 +3,38 @@
 @tailwind utilities;
 
 html {
-    cursor: url('../public/cursor.png'), auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    overflow: auto;
+  cursor: url("../public/cursor.png"), auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: auto;
 }
 a {
-   cursor: url('../public/cursor.png'), auto; 
+  cursor: url("../public/cursor.png"), auto;
 }
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 .section {
-    scroll-snap-align: start;
+  scroll-snap-align: start;
 }
 .back {
-    background-image: url("../public/group.png"), linear-gradient(266deg, rgba(230, 246, 255, 0.50) 0%, rgba(215, 197, 255, 0.09) 100%);
-    background-size: cover;
+  background-image: url("../public/group.png"),
+    linear-gradient(
+      266deg,
+      rgba(230, 246, 255, 0.5) 0%,
+      rgba(215, 197, 255, 0.09) 100%
+    );
+  background-size: cover;
 }
-.Box-Title{
-    font-size: 24px;
-    z-index: 1000;
+.Box-Title {
+  font-size: 24px;
+  z-index: 1000;
 }
-.Box-Desc{
-    z-index: 1000;
-    font-size: 16px;
+.Box-Desc {
+  z-index: 1000;
+  font-size: 16px;
 }
-.boxes { 
+/*.boxes { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -99,4 +104,69 @@ body::-webkit-scrollbar {
     .boxes {
         scale: 0.7;
     }
+}*/
+
+.angry-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  /*height: 819px;
+  width: 913px;*/
+  height: 100%;
+  width: 60%
 }
+
+.box-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 2;
+  border-radius: 32px;
+}
+.box-1 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  border-radius: 32px;
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+.box-2 {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  border-radius: 32px;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+.box-3 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  border-radius: 32px;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.box-4 {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  border-radius: 32px;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+.box-5 {
+  grid-row-start: 3;
+  grid-column-start: 3;
+  border-radius: 32px;
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+.When-Light{
+    /*height: 276px;
+    width: 276px;*/
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-10%, -40%);
+    rotate: -30deg;
+} 

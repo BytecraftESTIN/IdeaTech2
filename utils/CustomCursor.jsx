@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import cursor from '../public/cursor1.svg'
+import Image from "next/image";
+import cursor from "../public/cursor1.svg";
 
 const CustomCursor = ({ name, classDiv, classCursor, classForName }) => {
   return (
@@ -7,7 +7,7 @@ const CustomCursor = ({ name, classDiv, classCursor, classForName }) => {
       <Image src={cursor} className={classCursor} />
       <span className={classForName}>{name}</span>
     </div>
-  )
-}
+  );
+};
 
 export default CustomCursor;

@@ -9,7 +9,6 @@ const Mentors = () => {
     >
       Mentors
     </section>
-    
   );
 };
 

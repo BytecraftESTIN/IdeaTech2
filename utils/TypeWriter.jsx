@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -39,7 +39,7 @@ const TypeWriter = ({ text }) => {
 
   return (
     <motion.span
-      style={{ overflow: "hidden"}}
+      style={{ overflow: "hidden" }}
       variants={container}
       initial="hidden"
       animate="visible"

@@ -1,6 +1,6 @@
-"use client"
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+"use client";
+import Link from "next/link";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
@@ -12,7 +12,7 @@ import "../app/globals.css";
 const HomePage = () => {
   const smoothScrollTo = (id) => {
     document.getElementById(id).scrollIntoView({
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
@@ -43,18 +43,22 @@ const HomePage = () => {
           Let&apos;s break it down for you in the most simple and <br />{" "}
           straightforward way possible!
         </p>
-        <Link 
-          href="#boxes" 
-          onClick={() => smoothScrollTo('boxes')}
+        <Link
+          href="#boxes"
+          onClick={() => smoothScrollTo("boxes")}
           className="z-[1000] flex w-[504px] h-[54px] justify-center items-center gap-[20px] rounded-[20px] bg-[radial-gradient(70.71%_70.71%_at_50%_50%,_#303030_0%,_#000_100%)] hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
         >
           <span className="text-center text-[16px] font-clashDisplay font-normal leading-[normal] capitalize text-[#F5F5F5]">
             scroll to see more
           </span>
           <motion.div
-            initial={{ transform: 'translateX(0) rotate(90deg)' }}
+            initial={{ transform: "translateX(0) rotate(90deg)" }}
             animate={{
-              transform: ['translateX(0) rotate(90deg)', 'translateX(20px) rotate(90deg)', 'translateX(0) rotate(90deg)'],
+              transform: [
+                "translateX(0) rotate(90deg)",
+                "translateX(20px) rotate(90deg)",
+                "translateX(0) rotate(90deg)",
+              ],
               transition: { duration: 2, repeat: Infinity },
             }}
           >
@@ -66,10 +70,33 @@ const HomePage = () => {
           alt="Vector"
           className="absolute w-[100vw] top-[60px] z-10"
         />
-        <CustomCursor name={'Rayane'} classDiv={'animate-bounce absolute right-[280px] top-[80px] z-[50] pl-[50px]'} classCursor={'w-[30px] rotate-[deg]'} classForName={'rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold'} />
-        <CustomCursor name={'Iyad'} classDiv={'animate-bounce absolute right-[200px] bottom-[40%] z-[50]'} classCursor={'w-[30px]'} classForName={'rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold'}  />
-        <CustomCursor name={'Said'} classDiv={'animate-bounce absolute left-[240px] bottom-[42%] z-[50]'} classCursor={'w-[30px] rotate-[75deg]'} classForName={'rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold'}  />
-       </div>
+        <CustomCursor
+          name={"Rayane"}
+          classDiv={
+            "animate-bounce absolute right-[280px] top-[80px] z-[50] pl-[50px]"
+          }
+          classCursor={"w-[30px] rotate-[deg]"}
+          classForName={
+            "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
+          }
+        />
+        <CustomCursor
+          name={"Iyad"}
+          classDiv={"animate-bounce absolute right-[200px] bottom-[40%] z-[50]"}
+          classCursor={"w-[30px]"}
+          classForName={
+            "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
+          }
+        />
+        <CustomCursor
+          name={"Said"}
+          classDiv={"animate-bounce absolute left-[240px] bottom-[42%] z-[50]"}
+          classCursor={"w-[30px] rotate-[75deg]"}
+          classForName={
+            "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
+          }
+        />
+      </div>
     </section>
   );
 };

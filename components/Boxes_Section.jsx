@@ -11,7 +11,10 @@ import Image from "next/image";
 
 const Boxes_Section = () => {
   return (
-    <section id="boxes" className="h-screen w-[100%] flex justify-center items-center section">
+    <section
+      id="boxes"
+      className="h-screen w-[100%] flex justify-center items-center section"
+    >
       <div className="w-[90vw] back h-[86vh]  rounded-[40px] relative flex items-center justify-center">
         <Image
           src={logos}
@@ -45,56 +48,45 @@ const Boxes_Section = () => {
           <article className=" relative h-full w-full z-50 items-end px-[26px] py-[30px] rounded-[32px] flex gap-4  bg-[#C9DA8F] box2">
             <div>
               <h1 className="font-[600] Box-Title text-[#52225E] ">When</h1>
-              <span className=" font-[500] Box-Desc text-[#52225ECC]">Prepare yourself swiftly as  <br /> the event is just around the corner</span>
+              <span className=" font-[500] Box-Desc text-[#52225ECC]">
+                Prepare yourself swiftly as <br /> the event is just around the
+                corner
+              </span>
             </div>
-            <Image
-              src={Ideatech}
-              alt="ideatech"
-              className="When-Light"
-            />
+            <Image src={Ideatech} alt="ideatech" className="When-Light" />
           </article>
           <article className=" relative overflow-hidden h-full w-full flex flex-col justify-between z-50 rounded-[32px]  bg-[#FEDF6F] box3">
-            <Image
-              src={sponsorImage}
-              alt="Custom UI"
-              className="w-full h-[100%] rounded-[22px]  "
-            />
-            <div className="px-[26px] pb-[32px]"> 
-              <h1 className="text-[#1C471F] Box-Title font-[600]">Sponsors</h1>
-              <p className="text-[#1C471F] Box-Desc font-[500]">
-                The driving force behind this exceptional event!  
-              </p>
-            </div>
+
           </article>
           <article className=" h-full overflow-hidden w-full z-50 flex items-center flex-col  justify-between rounded-[32px] bg-[#F682A5] box4">
-            <div className="px-[26px] pt-[26px]"> 
+            <div className="px-[26px] pt-[26px]">
               <h1 className="text-[#4A411E] Box-Title font-[600]">Mentors</h1>
-              <p className="text-[#4A411E] Box-Desc font-[500]">Ready to lead you every step on your journey!</p>
+              <p className="text-[#4A411E] Box-Desc font-[500]">
+                Ready to lead you every step on your journey!
+              </p>
             </div>
-            <Image
-              src={MentorsImage}
-              alt="ideatech"
-              className=" "
-            />
+            <Image src={MentorsImage} alt="ideatech" className=" " />
           </article>
           <article className=" relative Box-About-container overflow-hidden  pl-[26px] pb-[26px] h-full w-full  flex items-end z-50 rounded-[32px]  bg-[#F9A474] box5">
             <div className="z-50 ">
-              <h1 className="text-[#582614] font-[600] Box-Title">About <br /> bytecraft</h1>
+              <h1 className="text-[#582614] font-[600] Box-Title">
+                About <br /> bytecraft
+              </h1>
               <p className="text-[#582614CC] font-[500] Box-Desc">
-               Our club is the best, <br /> no one can beat us!
+                Our club is the best
               </p>
             </div>
             <Image
-            src={AboutImage}
-            alt="about bytecraft "
-            className=" absolute Box-About  z-10 right-0 top-0 translate-x-[15%]"
+              src={AboutImage}
+              alt="about bytecraft "
+              className=" absolute Box-About  z-10 right-0 top-0 translate-x-[15%]"
             />
           </article>
           <article className=" h-full  w-full z-50 rounded-[32px]  bg-[#B8CEDC] box6">
             <div className="pt-[18px] px-[26px]">
               <h1 className="text-[#184363] font-[600] Box-Title">Agenda</h1>
               <p className="font-[600] Box-Desc">
-                Wait for us on 19th,20th April 2024 
+                Wait for us on 19th,20th April 2024
               </p>
             </div>
           </article>
