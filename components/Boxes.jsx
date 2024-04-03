@@ -10,10 +10,20 @@ import "../app/globals.css";
 import Image from "next/image";
 const Boxes = () => {
   return (
-    <section className="bg-cyan-200 h-screen w-[100%] flex justify-center items-center section">
-      <div className="w-[90vw] bg-slate-600 py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
+    <section className=" h-screen w-[100%] flex justify-center items-center section">
+      <div className="w-[90vw]  py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
+      <Image
+          src={logos}
+          alt="two logo"
+          className="w-[100px] absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]"
+        />
+        <Image
+          src={Vector}
+          alt="Vector"
+          className="absolute z-10 w-full [100vw] top-[40px]"
+        />
         <section className="angry-grid ">
-          <article className="box-0 py-[16px] flex flex-col justify-between w-full h-full bg-[#B8CEDC]">
+          <article className="box-0 z-50  py-[16px] flex flex-col justify-between w-full h-full bg-[#B8CEDC]">
             <h1 className="px-[26px] whitespace-nowrap text-[#52225E] font-[600]">
               About ideatech
             </h1>
@@ -31,7 +41,7 @@ const Boxes = () => {
               ideatech is the best <br /> ideathon in the world
             </span>
           </article>
-          <article className="relative box-1 flex items-end p-[20px] w-full h-full bg-[#F682A5]">
+          <article className="relative z-50 box-1 flex items-end p-[20px] w-full h-full bg-[#F682A5]">
             <div>
               <h1 className="font-[600] Box-Title text-[#52225E] ">When</h1>
               <span className=" font-[500] Box-Desc text-[#52225ECC]">
@@ -44,7 +54,7 @@ const Boxes = () => {
               <Image src={Ideatech} alt="ideatech" className=" When-Light" />
             </div>{" "}
           </article>
-          <article className="box-2 flex flex-col justify-between w-full h-full bg-[#FEDF6F]">
+          <article className="box-2 z-50 flex flex-col justify-between w-full h-full bg-[#FEDF6F]">
             <div className="px-[26px] pt-[26px]">
               <h1 className="text-[#4A411E] Box-Title font-[600]">Mentors</h1>
               <p className="text-[#4A411E] Box-Desc font-[500]">
@@ -59,7 +69,7 @@ const Boxes = () => {
               />
             </div>
           </article>
-          <article className="box-3 w-full h-full bg-[#C9DA8F]">
+          <article className="box-3 z-50 w-full h-full bg-[#C9DA8F]">
             <div className="h-[172px] w-full">
               <Image
                 src={sponsorImage}
@@ -74,7 +84,7 @@ const Boxes = () => {
               </p>
             </div>
           </article>
-          <article className="box-4 overflow-y-hidden relative p-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
+          <article className="box-4 z-50 overflow-y-hidden relative p-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
             <div className="z-50 ">
               <h1 className="text-[#582614] font-[600] Box-Title">
                 About <br /> bytecraft

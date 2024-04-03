@@ -163,10 +163,10 @@ body::-webkit-scrollbar {
 .When-Light {
   /*height: 276px;
     width: 276px;*/
-  width: 15vw;
+  width: 12vw;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-10%, -40%);
+  transform: translate(-10%, -30%);
   rotate: -30deg;
 }
