@@ -55,9 +55,7 @@ const Boxes_Section = () => {
             </div>
             <Image src={Ideatech} alt="ideatech" className="When-Light" />
           </article>
-          <article className=" relative overflow-hidden h-full w-full flex flex-col justify-between z-50 rounded-[32px]  bg-[#FEDF6F] box3">
-
-          </article>
+          <article className=" relative overflow-hidden h-full w-full flex flex-col justify-between z-50 rounded-[32px]  bg-[#FEDF6F] box3"></article>
           <article className=" h-full overflow-hidden w-full z-50 flex items-center flex-col  justify-between rounded-[32px] bg-[#F682A5] box4">
             <div className="px-[26px] pt-[26px]">
               <h1 className="text-[#4A411E] Box-Title font-[600]">Mentors</h1>

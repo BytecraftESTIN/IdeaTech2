@@ -46,28 +46,32 @@ const Boxes = () => {
           </article>
           <article className="box-2 flex flex-col justify-between w-full h-full bg-[#FEDF6F]">
             <div className="px-[26px] pt-[26px]">
-                <h1 className="text-[#4A411E] Box-Title font-[600]">Mentors</h1>
-                <p className="text-[#4A411E] Box-Desc font-[500]">
-                    Ready to lead you every step on your journey!
-                </p>
+              <h1 className="text-[#4A411E] Box-Title font-[600]">Mentors</h1>
+              <p className="text-[#4A411E] Box-Desc font-[500]">
+                Ready to lead you every step on your journey!
+              </p>
             </div>
             <div className=" w-full  flex justify-center items-start flex-1">
-                <Image src={MentorsImage} alt="ideatech" className=" rounded-b-[32px] " />
-            </div>   
+              <Image
+                src={MentorsImage}
+                alt="ideatech"
+                className=" rounded-b-[32px] "
+              />
+            </div>
           </article>
           <article className="box-3 w-full h-full bg-[#C9DA8F]">
             <div className="h-[172px] w-full">
-                <Image
+              <Image
                 src={sponsorImage}
                 alt="Custom UI"
                 className=" h-full w-full rounded-t-[32px]"
-                />
+              />
             </div>
-                <div className="px-[26px]">
-                <h1 className="text-[#1C471F] Box-Title font-[600]">Sponsors</h1>
-                <p className="text-[#1C471F] Box-Desc font-[500]">
-                    The driving force behind this exceptional event!
-                </p>
+            <div className="px-[26px]">
+              <h1 className="text-[#1C471F] Box-Title font-[600]">Sponsors</h1>
+              <p className="text-[#1C471F] Box-Desc font-[500]">
+                The driving force behind this exceptional event!
+              </p>
             </div>
           </article>
           <article className="box-4 overflow-y-hidden relative p-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
@@ -87,10 +91,10 @@ const Boxes = () => {
           </article>
           <article className="box-5 z-50 w-full h-full bg-[#B8CEDC]">
             <div className="pt-[18px] px-[26px]">
-                <h1 className="text-[#184363] font-[600] Box-Title">Agenda</h1>
-                <p className="font-[600] Box-Desc">
-                    Wait for us on 19th,20th April 2024
-                </p>
+              <h1 className="text-[#184363] font-[600] Box-Title">Agenda</h1>
+              <p className="font-[600] Box-Desc">
+                Wait for us on 19th,20th April 2024
+              </p>
             </div>
           </article>
         </section>

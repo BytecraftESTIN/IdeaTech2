@@ -114,7 +114,7 @@ body::-webkit-scrollbar {
   /*height: 819px;
   width: 913px;*/
   height: 100%;
-  width: 60%
+  width: 60%;
 }
 
 .box-0 {
@@ -160,13 +160,13 @@ body::-webkit-scrollbar {
   grid-row-end: 4;
   grid-column-end: 4;
 }
-.When-Light{
-    /*height: 276px;
+.When-Light {
+  /*height: 276px;
     width: 276px;*/
-    width: 15vw;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-10%, -40%);
-    rotate: -30deg;
-} 
+  width: 15vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-10%, -40%);
+  rotate: -30deg;
+}
