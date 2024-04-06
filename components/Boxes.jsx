@@ -71,9 +71,9 @@ const Boxes = () => {
             </div>
             <div className="">
               {" "}
-              <Image src={Ideatech} alt="ideatech" className="absolute w-[140px] rotate-[-10deg] top-[0px] right-[160px]" />
+              <Image src={Ideatech} alt="ideatech" className="absolute w-[140px] rotate-[-10deg] top-[6px] right-[140px]" />
             </div>{" "}
-            <div className="absolute right-[-30px] flex rotate-[12deg] p-[16px] justify-center items-end gap-[10px] rounded-[24px] bg-[rgba(28,_28,_30,_0.50)] backdrop-filter backdrop-blur-[20px]">
+            <div className="absolute right-[-90px] top-[-5px] flex rotate-[10deg] p-[16px] justify-center items-end gap-[10px] rounded-[24px] bg-[rgba(28,_28,_30,_0.50)] backdrop-filter backdrop-blur-[20px]">
               <div className="flex flex-col gap-[10px]">
                 <div><span className="text-[#FFF] text-[20px] not-italic font-clashDisplay font-medium"><span className="text-[#FFF] text-[60px] not-italic font-normal leading-[53.152px]">{remainingTime.days}</span> <span className="opacity-20">Days</span></span></div>
                 <div><span className="text-[#FFF] text-[20px] not-italic font-clashDisplay font-medium"><span className="text-[#FFF] text-[60px] not-italic font-normal leading-[53.152px]">{remainingTime.hours}</span> <span className="opacity-20">Hours</span></span></div>
@@ -154,7 +154,7 @@ const Boxes = () => {
         <CustomCursor
           name={"Mehdi"}
           classDiv={
-            "animate-bounce absolute right-[190px] top-[160px] z-[50] pl-[50px]"
+            "animate-bounce absolute right-[135px] top-[160px] z-[50] pl-[50px]"
           }
           classCursor={"w-[30px] rotate-[deg]"}
           classForName={
