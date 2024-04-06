@@ -1,4 +1,3 @@
-import TypeWriter from "@/utils/TypeWriter";
 import "../app/globals.css";
 
 const Mentors = () => {

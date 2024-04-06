@@ -27,92 +27,19 @@ body::-webkit-scrollbar {
   background-size: cover;
 }
 .Box-Title {
-  font-size: 24px;
+  font-size: 26px;
   z-index: 1000;
 }
 .Box-Desc {
   z-index: 1000;
-  font-size: 16px;
+  font-size: 14px;
 }
-/*.boxes { 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px 30px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "box1 box2 box2"
-      "box1 box3 box4"
-      "box5 box5 box6";
-  }
-  
-  .box1 { grid-area: box1; }
-  
-  .box2 { grid-area: box2; }
-  
-  .box3 { grid-area: box3; }
-  
-  .box4 { grid-area: box4; }
-  
-  .box5 { grid-area: box5; }
-  
-  .box6 { grid-area: box6; }
-.When-Light{
-    @apply translate-x-[60%]  w-[300px] absolute top-[-15%]  -rotate-[35deg] px-[26px]
-}
-@media (max-width: 786px){
-    .boxes {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-     .box2, .box3, .box4, .box5, .box6 {
-        width: 200px;
-        height: 250px;
-     }
-     .box1{
-        width: 200px;
-        height: 300px;
-     }
-     .When-Light{
-        @apply translate-x-0
-     }
-     .Box-Desc{
-        font-size: 12px;
-     }
-     .Box-Title{
-        font-size: 16px;
-    }
-    .Box-About{
-        order: -1;
-        position: relative;
-        min-width: 100%;
-        transform: translate(-5%,0);
-    }
-    .Box-About-container{
-        flex-direction: column;;
-        justify-content: space-between;
-        align-items: start;
-        overflow: visible;
-    }
-}
-  
-@media (max-width: 700px){
-    .boxes {
-        scale: 0.7;
-    }
-}*/
 
 .angry-grid {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-  /*height: 819px;
-  width: 913px;*/
+  gap: 20px;
   height: 100%;
   width: 60%;
 }
@@ -120,7 +47,6 @@ body::-webkit-scrollbar {
 .box-0 {
   grid-row-start: 1;
   grid-column-start: 1;
-
   grid-row-end: 3;
   grid-column-end: 2;
   border-radius: 32px;
@@ -160,13 +86,9 @@ body::-webkit-scrollbar {
   grid-row-end: 4;
   grid-column-end: 4;
 }
-.When-Light {
-  /*height: 276px;
-    width: 276px;*/
-  width: 12vw;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-10%, -30%);
-  rotate: -30deg;
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .resp {
+    font-size: 79px;
+  }
 }
