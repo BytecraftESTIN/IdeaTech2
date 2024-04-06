@@ -21,7 +21,7 @@ const HomePage = () => {
       <div className="w-[90vw] h-[86vh] flex flex-col justify-center items-center back rounded-[40px] relative">
         <Image src={logos} alt="two logo" className="w-[100px]" />
         <div>
-          <h1 className="text-[#242424] mt-[30px] font-clashDisplay font-medium text-center text-[80.024px] leading-[110px] tracking-[0.997px]">
+          <h1 className="resp text-[#242424] mt-[30px] font-clashDisplay font-medium text-center text-[80.024px] leading-[110px] tracking-[0.997px]">
             <span className="pr-[200px]">
               where we
               <span className="text-[#FFF] not-italic z-[11111] px-[30px] relative ml-[20px] leading-[57.419px] tracking-[1.14px] rounded-[797.488px] bg-[linear-gradient(259deg,_#9E95FF_3.48%,_#DAB5FF_67.29%)] font-semibold">
@@ -73,7 +73,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Rayane"}
           classDiv={
-            "animate-bounce absolute right-[280px] top-[80px] z-[50] pl-[50px]"
+            "animate-bounce absolute right-[20%] top-[100px] z-[50] pl-[50px]"
           }
           classCursor={"w-[30px] rotate-[deg]"}
           classForName={
@@ -91,7 +91,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Said"}
           classDiv={"animate-bounce absolute left-[240px] bottom-[42%] z-[50]"}
-          classCursor={"w-[30px] rotate-[75deg]"}
+          classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
           }

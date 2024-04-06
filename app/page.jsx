@@ -2,8 +2,8 @@ import HomePage from "../components/HomePage";
 import Sponsors from "../components/Sponsors";
 import Mentors from "../components/Mentors";
 import Agenda from "../components/Agenda";
-import Boxes_Section from "@/components/Boxes_Section";
 import Boxes from "../components/Boxes";
+
 export default function Home() {
   return (
     <main className="flex w-[500vw]">
