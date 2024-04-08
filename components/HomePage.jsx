@@ -60,6 +60,7 @@ const HomePage = () => {
             Register Now
           </span>
           <motion.div
+            className="max-md:hidden"
             initial={{ transform: "translateX(0) rotate(90deg)" }}
             animate={{
               transform: [
@@ -70,7 +71,7 @@ const HomePage = () => {
               transition: { duration: 2, repeat: Infinity },
             }}
           >
-            <Image src={mouse} />
+            <Image src={mouse} className="max-md:hidden" />
           </motion.div>
         </Link>
         <Image
@@ -78,11 +79,15 @@ const HomePage = () => {
           alt="Vector"
           className="absolute w-[100vw] top-[60px] z-10 max-md:hidden"
         />
-        <Image src={VectorMob} alt="Vector" className="absolute top-[370px] hidden max-md:block" />
+        <Image
+          src={VectorMob}
+          alt="Vector"
+          className="absolute top-[360px] w-[100%] hidden max-md:block"
+        />
         <CustomCursor
           name={"Rayane"}
           classDiv={
-            "animate-bounce absolute right-[20%] top-[100px] z-[50] pl-[50px] max-md:top-[310px] max-md:right-[4%]"
+            "animate-bounce absolute right-[20%] top-[100px] z-[50] pl-[50px] max-md:top-[306px] max-md:right-[4%]"
           }
           classCursor={"w-[30px] rotate-[deg] max-md:ml-[12px]"}
           classForName={
@@ -102,7 +107,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Said"}
           classDiv={
-            "animate-bounce absolute left-[240px] bottom-[42%] z-[50] max-md:hidden"
+            "animate-bounce absolute left-[180px] bottom-[42%] z-[50] max-md:hidden"
           }
           classCursor={"w-[30px]"}
           classForName={
