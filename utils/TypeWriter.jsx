@@ -10,7 +10,7 @@ const TypeWriter = ({ text }) => {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.5, delayChildren: 0 * i },
+      transition: { staggerChildren: 0.2, delayChildren: 0 * i },
     }),
   };
 
