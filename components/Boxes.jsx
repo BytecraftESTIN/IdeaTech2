@@ -67,28 +67,36 @@ const Boxes = () => {
                 className="flex flex-col gap-1 justify-center items-center"
               >
                 <FaLinkedin className="text-[#0a66c2] text-[22px]" />
-                <span className="text-[10px] font-inter">Linkedin</span>
+                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                  Linkedin
+                </span>
               </Link>
               <Link
                 href="https://www.facebook.com/ByteCraftEstin"
                 className="flex flex-col gap-1 justify-center items-center"
               >
                 <FaFacebook className="text-[#1877f2] text-[22px]" />
-                <span className="text-[10px] font-inter">Facebook</span>
+                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                  Facebook
+                </span>
               </Link>
               <Link
                 href="https://www.instagram.com/bytecraft.estin/"
                 className="flex flex-col gap-1 justify-center items-center"
               >
                 <FaInstagramSquare className="text-[#c13584] text-[22px]" />
-                <span className="text-[10px] font-inter">Instagram</span>
+                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                  Instagram
+                </span>
               </Link>
               <Link
                 href="https://www.youtube.com/@BytecraftClub"
                 className="flex flex-col gap-1 justify-center items-center"
               >
                 <FaYoutube className="text-[#ff0000] text-[22px]" />
-                <span className="text-[10px] font-inter">Youtube</span>
+                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                  Youtube
+                </span>
               </Link>
             </div>
             <span className="px-[26px] font-inter Box-Desc text-[#52225ECC] font-medium">
@@ -235,7 +243,7 @@ const Boxes = () => {
         <CustomCursor
           name={"Mehdi"}
           classDiv={
-            "animate-bounce absolute right-[190px] top-[190px] z-[50] pl-[50px]"
+            "animate-bounce absolute right-[135px] top-[160px] z-[50] pl-[50px]"
           }
           classCursor={"w-[30px] rotate-[deg]"}
           classForName={
