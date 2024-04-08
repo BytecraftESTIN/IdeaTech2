@@ -84,7 +84,7 @@ const Boxes = () => {
                 className="absolute w-[160px] rotate-[-10deg] top-[0px] right-[160px]"
               />
             </div>{" "}
-            <div className="absolute right-[-30px] flex rotate-[12.067deg] p-[16px] justify-center items-end gap-[10px] flex-shrink-0 rounded-[24px] bg-[rgba(28,_28,_30,_0.50)] backdrop-filter backdrop-blur-[20px]">
+            <div className="absolute right-[-90px] top-[-5px] flex rotate-[10deg] p-[16px] justify-center items-end gap-[10px] rounded-[24px] bg-[rgba(28,_28,_30,_0.50)] backdrop-filter backdrop-blur-[20px]">
               <div className="flex flex-col gap-[10px]">
                 <div>
                   <span className="text-[#FFF] text-[20px] not-italic font-clashDisplay font-medium">
@@ -203,7 +203,7 @@ const Boxes = () => {
         <CustomCursor
           name={"Mehdi"}
           classDiv={
-            "animate-bounce absolute right-[190px] top-[160px] z-[50] pl-[50px]"
+            "animate-bounce absolute right-[135px] top-[160px] z-[50] pl-[50px]"
           }
           classCursor={"w-[30px] rotate-[deg]"}
           classForName={
