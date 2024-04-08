@@ -13,6 +13,10 @@ import calenderDown from "../public/CalendarDown.png";
 import { IoIosPause } from "react-icons/io";
 import { SiConventionalcommits } from "react-icons/si";
 import { FaFlag } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import "../app/globals.css";
 import Image from "next/image";
 import Link from 'next/link';
@@ -57,11 +61,44 @@ const Boxes = () => {
               alt="ideatech"
               className=" z-[0] w-[240px] px-[26px] mx-[auto]"
             />
-            <Image
-              src={CustomeUI}
-              alt="Custom UI"
-              className=" w-full z-0 -translate-x-5  "
-            />
+            <div className="flex gap-[20px] p-[10px] z-20 translate-x-[-20px] rounded-[12.96px] bg-[#FFF] [box-shadow:0px_1px_0.4px_0px_rgba(0,_0,_0,_0.03),_0px_2px_0.8px_0px_rgba(0,_0,_0,_0.04),_0px_3px_1.6px_0px_rgba(0,_0,_0,_0.04),_0px_5px_2.9px_0px_rgba(0,_0,_0,_0.05),_0px_9px_5.3px_0px_rgba(0,_0,_0,_0.05),_0px_15px_10.4px_0px_rgba(0,_0,_0,_0.05),_0px_31px_22.8px_0px_rgba(0,_0,_0,_0.05)]">
+              <Link
+                href="https://www.linkedin.com/company/bytecraft-club/mycompany/"
+                className="flex flex-col gap-1 justify-center items-center"
+              >
+                <FaLinkedin className="text-[#0a66c2] text-[22px]" />
+                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                  Linkedin
+                </span>
+              </Link>
+              <Link
+                href="https://www.facebook.com/ByteCraftEstin"
+                className="flex flex-col gap-1 justify-center items-center"
+              >
+                <FaFacebook className="text-[#1877f2] text-[22px]" />
+                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                  Facebook
+                </span>
+              </Link>
+              <Link
+                href="https://www.instagram.com/bytecraft.estin/"
+                className="flex flex-col gap-1 justify-center items-center"
+              >
+                <FaInstagramSquare className="text-[#c13584] text-[22px]" />
+                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                  Instagram
+                </span>
+              </Link>
+              <Link
+                href="https://www.youtube.com/@BytecraftClub"
+                className="flex flex-col gap-1 justify-center items-center"
+              >
+                <FaYoutube className="text-[#ff0000] text-[22px]" />
+                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                  Youtube
+                </span>
+              </Link>
+            </div>
             <span className="px-[26px] font-inter Box-Desc text-[#52225ECC] font-medium">
               ideatech is the best <br /> ideathon in the world
             </span>
@@ -81,10 +118,10 @@ const Boxes = () => {
               <Image
                 src={Ideatech}
                 alt="ideatech"
-                className="absolute w-[160px] rotate-[-10deg] top-[0px] right-[160px]"
+                className="absolute w-[140px] rotate-[-10deg] top-[0px] right-[140px]"
               />
             </div>{" "}
-            <div className="absolute right-[-90px] top-[-5px] flex rotate-[10deg] p-[16px] justify-center items-end gap-[10px] rounded-[24px] bg-[rgba(28,_28,_30,_0.50)] backdrop-filter backdrop-blur-[20px]">
+            <div className="absolute top-[-10px] right-[-50px] flex rotate-[10deg] p-[16px] justify-center items-end gap-[10px] flex-shrink-0 rounded-[24px] bg-[rgba(28,_28,_30,_0.50)] backdrop-filter backdrop-blur-[20px]">
               <div className="flex flex-col gap-[10px]">
                 <div>
                   <span className="text-[#FFF] text-[20px] not-italic font-clashDisplay font-medium">
@@ -116,7 +153,7 @@ const Boxes = () => {
                     IDEATECH is waiting <FaFlag />
                   </span>
                 </div>
-                <div className="flex gap-[50px] justify-center items-center bg-[rgba(62,_62,_62,_0.38)] py-[8px] px-[20px] rounded-[6px]">
+                <div className="flex gap-[50px] justify-center items-center bg-[rgba(62,_62,_62,_0.38)] py-[8px] px-[20px] rounded-[10px]">
                   <span>
                     <SiConventionalcommits className="text-[#FFF] text-[12px]" />
                   </span>
@@ -136,7 +173,7 @@ const Boxes = () => {
                 <Image
                   src={sponsorImage}
                   alt="Custom UI"
-                  className=" h-full w-full rounded-t-[40px] h-[100%]"
+                  className=" h-full w-full rounded-t-[40px] h-[100%] top-0"
                 />
               </div>
               <div className="px-[26px]">
@@ -163,7 +200,7 @@ const Boxes = () => {
                 <Image
                   src={MentorsImage}
                   alt="ideatech"
-                  className=" rounded-b-[32px] "
+                  className=" rounded-b-[32px]"
                 />
               </div>
             </article>
@@ -171,7 +208,7 @@ const Boxes = () => {
           <article className="box-4 z-50 h-[182px] overflow-hidden relative px-[26px] py-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
             <div className="z-50 ">
               <h1 className="text-[#582614] font-clashDisplay font-semibold Box-Title">
-                About <br /> bytecraft
+                About <br /> Bytecraft
               </h1>
               <p className="text-[#582614CC] font-inter font-medium Box-Desc">
                 Our club is the best, <br /> no one can beat us!
@@ -193,8 +230,11 @@ const Boxes = () => {
                   Wait for us on 19th,20th <br /> April 2024
                 </p>
                 <div className="">
-                  <Image src={calenderDown} className="absolute left-0"  />
-                  <Image src={calenderUp} className="absolute right-[-20px] bottom-[-80px]" />
+                  <Image src={calenderDown} className="absolute left-0" />
+                  <Image
+                    src={calenderUp}
+                    className="absolute right-[0px] bottom-[-100px]"
+                  />
                 </div>
               </div>
             </article>
@@ -212,7 +252,7 @@ const Boxes = () => {
         />
         <CustomCursor
           name={"Abdou"}
-          classDiv={"animate-bounce absolute right-[200px] bottom-[32%] z-[50]"}
+          classDiv={"animate-bounce absolute right-[200px] bottom-[26%] z-[50]"}
           classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
@@ -220,7 +260,7 @@ const Boxes = () => {
         />
         <CustomCursor
           name={"Yacine"}
-          classDiv={"animate-bounce absolute left-[160px] bottom-[46%] z-[50]"}
+          classDiv={"animate-bounce absolute left-[160px] bottom-[44%] z-[50]"}
           classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
