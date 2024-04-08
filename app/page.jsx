@@ -6,7 +6,7 @@ import Boxes from "../components/Boxes";
 
 export default function Home() {
   return (
-    <main className="flex w-[500vw]">
+    <main className="flex w-[500vw] max-md:w-[100vw]">
       <HomePage />
       <Boxes />
       <Sponsors />

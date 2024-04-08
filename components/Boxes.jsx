@@ -8,6 +8,8 @@ import MentorsImage from "../public/mentors.png";
 import AboutImage from "../public/About-Byte.png";
 import sponsorImage from "../public/sponsor.png";
 import Vector from "../public/Vector.png";
+import calenderUp from "../public/CalendarUp.png";
+import calenderDown from "../public/CalendarDown.png";
 import { IoIosPause } from "react-icons/io";
 import { SiConventionalcommits } from "react-icons/si";
 import { FaFlag } from "react-icons/fa";
@@ -35,7 +37,10 @@ const Boxes = () => {
 
 
   return (
-    <section id="boxes" className=" h-screen w-[100%] flex justify-center items-center section">
+    <section
+      id="boxes"
+      className=" h-screen w-[100%] flex justify-center items-center section max-md:hidden"
+    >
       <div className="w-[90vw] py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
         <Image
           src={Vector}
@@ -63,7 +68,9 @@ const Boxes = () => {
           </article>
           <article className="relative z-50 box-1 flex items-end p-[20px] w-full h-full bg-[#F682A5]">
             <div>
-              <h1 className="Box-Title text-[#52225E] font-clashDisplay font-semibold">When</h1>
+              <h1 className="Box-Title text-[#52225E] font-clashDisplay font-semibold">
+                When
+              </h1>
               <span className="font-medium font-inter Box-Desc text-[#52225ECC]">
                 Prepare yourself swiftly as <br /> the event is just around the
                 corner
@@ -71,22 +78,54 @@ const Boxes = () => {
             </div>
             <div className="">
               {" "}
-              <Image src={Ideatech} alt="ideatech" className="absolute w-[140px] rotate-[-10deg] top-[6px] right-[140px]" />
+              <Image
+                src={Ideatech}
+                alt="ideatech"
+                className="absolute w-[160px] rotate-[-10deg] top-[0px] right-[160px]"
+              />
             </div>{" "}
             <div className="absolute right-[-90px] top-[-5px] flex rotate-[10deg] p-[16px] justify-center items-end gap-[10px] rounded-[24px] bg-[rgba(28,_28,_30,_0.50)] backdrop-filter backdrop-blur-[20px]">
               <div className="flex flex-col gap-[10px]">
-                <div><span className="text-[#FFF] text-[20px] not-italic font-clashDisplay font-medium"><span className="text-[#FFF] text-[60px] not-italic font-normal leading-[53.152px]">{remainingTime.days}</span> <span className="opacity-20">Days</span></span></div>
-                <div><span className="text-[#FFF] text-[20px] not-italic font-clashDisplay font-medium"><span className="text-[#FFF] text-[60px] not-italic font-normal leading-[53.152px]">{remainingTime.hours}</span> <span className="opacity-20">Hours</span></span></div>
+                <div>
+                  <span className="text-[#FFF] text-[20px] not-italic font-clashDisplay font-medium">
+                    <span className="text-[#FFF] text-[60px] not-italic font-normal leading-[53.152px]">
+                      {remainingTime.days}
+                    </span>{" "}
+                    <span className="opacity-20">Days</span>
+                  </span>
+                </div>
+                <div>
+                  <span className="text-[#FFF] text-[20px] not-italic font-clashDisplay font-medium">
+                    <span className="text-[#FFF] text-[60px] not-italic font-normal leading-[53.152px]">
+                      {remainingTime.hours}
+                    </span>{" "}
+                    <span className="opacity-20">Hours</span>
+                  </span>
+                </div>
               </div>
               <div className="flex flex-col gap-[10px]">
                 <div className="flex pl-[8px] pr-[8px] py-[8px] flex-col items-start gap-[10px] self-stretch rounded-[11px] bg-[rgba(62,_62,_62,_0.38)]">
-                  <span className="text-[#FFF] text-[14px] font-inter">Target Time: <span className="pl-[36px]">{remainingTime.days}<span className="opacity-20">Days</span></span></span>
-                  <span className="flex p-[6.666px] font-inter text-[14px] text-[#FFF] gap-[10px] items-center self-stretch rounded-[6px] bg-[rgba(0,_0,_0,_0.15)]">IDEATECH is waiting <FaFlag /></span>
+                  <span className="text-[#FFF] text-[14px] font-inter">
+                    Target Time:{" "}
+                    <span className="pl-[36px]">
+                      {remainingTime.days}
+                      <span className="opacity-20">Days</span>
+                    </span>
+                  </span>
+                  <span className="flex p-[6.666px] font-inter text-[14px] text-[#FFF] gap-[10px] items-center self-stretch rounded-[6px] bg-[rgba(0,_0,_0,_0.15)]">
+                    IDEATECH is waiting <FaFlag />
+                  </span>
                 </div>
                 <div className="flex gap-[50px] justify-center items-center bg-[rgba(62,_62,_62,_0.38)] py-[8px] px-[20px] rounded-[6px]">
-                  <span><SiConventionalcommits className="text-[#FFF] text-[12px]" /></span>
-                  <span><IoIosPause className="text-[#FFF]" /></span>
-                  <span><SiConventionalcommits className="text-[#FFF] text-[12px] font-bold" /></span>
+                  <span>
+                    <SiConventionalcommits className="text-[#FFF] text-[12px]" />
+                  </span>
+                  <span>
+                    <IoIosPause className="text-[#FFF]" />
+                  </span>
+                  <span>
+                    <SiConventionalcommits className="text-[#FFF] text-[12px] font-bold" />
+                  </span>
                 </div>
               </div>
             </div>
@@ -101,7 +140,9 @@ const Boxes = () => {
                 />
               </div>
               <div className="px-[26px]">
-                <h1 className="text-[#1C471F] Box-Title font-clashDisplay font-semibold">Sponsors</h1>
+                <h1 className="text-[#1C471F] Box-Title font-clashDisplay font-semibold">
+                  Sponsors
+                </h1>
                 <p className="text-[#1C471F] Box-Desc font-inter font-medium">
                   The driving force behind <br /> this exceptional event!
                 </p>
@@ -110,20 +151,22 @@ const Boxes = () => {
           </Link>
           <Link href="#mentors" className="z-[1111]">
             <article className="box-2 z-50 flex flex-col w-full h-full bg-[#FEDF6F]">
-            <div className="px-[26px] pt-[16px]">
-              <h1 className="text-[#4A411E] Box-Title font-clashDisplay font-semibold">Mentors</h1>
-              <p className="text-[#4A411E] Box-Desc font-inter font-medium">
-                Ready to lead you every <br /> step on your journey!
-              </p>
-            </div>
-            <div className=" w-full  flex justify-center items-start flex-1">
-              <Image
-                src={MentorsImage}
-                alt="ideatech"
-                className=" rounded-b-[32px] "
-              />
-            </div>
-          </article>
+              <div className="px-[26px] pt-[16px]">
+                <h1 className="text-[#4A411E] Box-Title font-clashDisplay font-semibold">
+                  Mentors
+                </h1>
+                <p className="text-[#4A411E] Box-Desc font-inter font-medium">
+                  Ready to lead you every <br /> step on your journey!
+                </p>
+              </div>
+              <div className=" w-full  flex justify-center items-start flex-1">
+                <Image
+                  src={MentorsImage}
+                  alt="ideatech"
+                  className=" rounded-b-[32px] "
+                />
+              </div>
+            </article>
           </Link>
           <article className="box-4 z-50 h-[182px] overflow-hidden relative px-[26px] py-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
             <div className="z-50 ">
@@ -141,12 +184,18 @@ const Boxes = () => {
             />
           </article>
           <Link href="#agenda" className="z-50">
-            <article className="box-5 w-full h-full bg-[#B8CEDC]">
+            <article className="relative overflow-hidden box-5 w-full h-full bg-[#B8CEDC]">
               <div className="pt-[12px] px-[22px]">
-                <h1 className="text-[#184363] font-clashDisplay font-semibold Box-Title">Agenda</h1>
+                <h1 className="text-[#184363] font-clashDisplay font-semibold Box-Title">
+                  Agenda
+                </h1>
                 <p className="Box-Desc font-inter font-medium text-[#184363]">
                   Wait for us on 19th,20th <br /> April 2024
                 </p>
+                <div className="">
+                  <Image src={calenderDown} className="absolute left-0"  />
+                  <Image src={calenderUp} className="absolute right-[-20px] bottom-[-80px]" />
+                </div>
               </div>
             </article>
           </Link>
