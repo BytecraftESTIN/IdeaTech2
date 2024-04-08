@@ -70,7 +70,7 @@ const HomePage = () => {
               transition: { duration: 2, repeat: Infinity },
             }}
           >
-            <Image src={mouse} />
+            <Image src={mouse} alt="mouse icon" />
           </motion.div>
         </Link>
         <Image

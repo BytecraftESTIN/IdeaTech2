@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import CustomCursor from "@/utils/CustomCursor";
@@ -15,26 +15,26 @@ import { SiConventionalcommits } from "react-icons/si";
 import { FaFlag } from "react-icons/fa";
 import "../app/globals.css";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
 const Boxes = () => {
-
-      const eventDate = new Date("2024-04-19T18:00:00");
-      const calculateRemainingTime = () => {
-      const currentDate = new Date();
-      const timeDifference = eventDate - currentDate;
-      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      return { days, hours };
-    };
-    const [remainingTime, setRemainingTime] = useState(calculateRemainingTime);
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setRemainingTime(calculateRemainingTime);
-      }, 1000);
-      return () => clearInterval(interval);
-    }, []);
-
+  const eventDate = new Date("2024-04-19T08:00:00");
+  const calculateRemainingTime = () => {
+    const currentDate = new Date();
+    const timeDifference = eventDate - currentDate;
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    return { days, hours };
+  };
+  const [remainingTime, setRemainingTime] = useState(calculateRemainingTime);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRemainingTime(calculateRemainingTime);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
@@ -48,7 +48,7 @@ const Boxes = () => {
           className="absolute z-20 w-full [100vw] top-[60px]"
         />
         <section className="angry-grid">
-          <article className="box-0 z-[10] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
+          <article className="box-0  z-[10] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
             <h1 className="px-[26px] text-[20px] whitespace-nowrap text-[#52225E] font-clashDisplay font-semibold">
               About IdeaTech
             </h1>
@@ -136,7 +136,7 @@ const Boxes = () => {
                 <Image
                   src={sponsorImage}
                   alt="Custom UI"
-                  className=" h-full w-full rounded-t-[40px] h-[100%]"
+                  className=" h-full w-full rounded-t-[40px]"
                 />
               </div>
               <div className="px-[26px]">
@@ -168,7 +168,7 @@ const Boxes = () => {
               </div>
             </article>
           </Link>
-          <article className="box-4 z-50 h-[182px] overflow-hidden relative px-[26px] py-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
+          <article className="box-4 z-50  overflow-hidden relative px-[26px] py-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
             <div className="z-50 ">
               <h1 className="text-[#582614] font-clashDisplay font-semibold Box-Title">
                 About <br /> bytecraft
@@ -193,8 +193,16 @@ const Boxes = () => {
                   Wait for us on 19th,20th <br /> April 2024
                 </p>
                 <div className="">
-                  <Image src={calenderDown} className="absolute left-0"  />
-                  <Image src={calenderUp} className="absolute right-[-20px] bottom-[-80px]" />
+                  <Image
+                    src={calenderDown}
+                    alt="clanderDown"
+                    className="absolute left-0"
+                  />
+                  <Image
+                    src={calenderUp}
+                    alt="calanderUp"
+                    className="absolute right-[-20px] bottom-[-80px]"
+                  />
                 </div>
               </div>
             </article>
