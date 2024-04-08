@@ -19,7 +19,7 @@ const HomePage = () => {
 
   return (
     <section className="h-screen w-[100%] flex justify-center items-center section">
-      <div className="w-[90vw] h-[86vh] max-md:h-[76vh] flex flex-col justify-center items-center back rounded-[40px] relative">
+      <div className="w-[90vw] h-[86vh] max-md:h-[70vh] flex flex-col justify-center items-center back rounded-[40px] relative">
         <Image
           src={logos}
           alt="two logo"
