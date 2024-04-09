@@ -5,11 +5,12 @@ import Image from "next/image";
 import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
 import Vector from "../public/Vector.png";
-import VectorMob from '../public/Vector Mobile.png'
+import VectorMob from "../public/Vector Mobile.png";
 import TypeWriter from "../utils/TypeWriter";
 import CustomCursor from "../utils/CustomCursor";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import "../app/globals.css";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const HomePage = () => {
   const smoothScrollTo = (id) => {
@@ -20,8 +21,8 @@ const HomePage = () => {
 
   return (
     <section
+      className="h-screen w-[100%] flex justify-center items-center section"
       id="home"
-      className="relative h-screen w-[100%] flex justify-center md:items-center section"
     >
       <div className="relative w-[90vw] h-[86vh] flex flex-col justify-center items-center overflow-hidden back rounded-[40px] max-md:gap-[20px] max-md:mt-16">
         <Image
@@ -48,7 +49,7 @@ const HomePage = () => {
             <span className="text-center relative z-[5]">together</span>
           </h1>
         </div>
-        <h2 className="hidden max-md:!block mt-[180px] mb-[180px] text-[#242424] text-center font-clashDisplay text-[30px] font-semibold leading-[37px]">
+        <h2 className="hidden max-md:!block mt-[180px] mb-[180px] text-[#242424] text-center font-clashDisplay text-[29px] font-semibold leading-[37px]">
           For the best experience <br /> you should use the pc
         </h2>
         <p className="z-[99999] text-[#4D4D4D] font-inter text-center text-[13px] font-medium leading-[27px] mt-[28px] mb-[20px] max-md:hidden">
@@ -58,6 +59,7 @@ const HomePage = () => {
         <Link
           href="https://docs.google.com/forms/d/e/1FAIpQLSfx7fW0WzsI3B4uEmme6sJGF2kMK59YGzQKs3wgLxkEf58vCw/viewform"
           className="z-[1000] flex w-[504px] h-[54px] justify-center items-center gap-[20px] rounded-[20px] bg-[radial-gradient(70.71%_70.71%_at_50%_50%,_#303030_0%,_#000_100%)] hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 max-md:w-[210px] max-md:rounded-[14px]"
+          target="_blank"
         >
           <span className="text-center text-[17px] font-clashDisplay font-normal leading-[normal] capitalize text-[#F5F5F5] max-md:text-[16px]">
             Register Now
@@ -119,10 +121,10 @@ const HomePage = () => {
         />
       </div>
       <Link
-        href="#boxes"
-        className="absolute top-[50%] translate-y-[-50%] right-6 text-[36px] text-[#a196ff] max-md:hidden"
+        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button translate-x-7 md:flex hidden"
+        href={"#boxes"}
       >
-        <IoIosArrowDroprightCircle />
+        <FaArrowRightLong className="" />
       </Link>
     </section>
   );
