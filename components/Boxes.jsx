@@ -23,6 +23,7 @@ import Link from "next/link";
 
 const Boxes = () => {
   const eventDate = new Date("2024-04-19T08:00:00");
+
   const calculateRemainingTime = () => {
     const currentDate = new Date();
     const timeDifference = eventDate - currentDate;
@@ -43,13 +44,13 @@ const Boxes = () => {
   return (
     <section
       id="boxes"
-      className=" h-screen w-[100%] flex justify-center items-center section max-md:hidden"
+      className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
       <div className="w-[90vw] py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
         <Image
           src={Vector}
           alt="Vector"
-          className="absolute z-20 w-full [100vw] top-[60px]"
+          className="absolute z-10 w-full [100vw] top-[60px]"
         />
         <section className="angry-grid">
           <article className="box-0  z-[10] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
@@ -61,40 +62,44 @@ const Boxes = () => {
               alt="ideatech"
               className=" z-[0] w-[240px] px-[26px] mx-[auto]"
             />
-            <div className="flex gap-[20px] p-[10px] z-20 translate-x-[-20px] rounded-[12.96px] bg-[#FFF] [box-shadow:0px_1px_0.4px_0px_rgba(0,_0,_0,_0.03),_0px_2px_0.8px_0px_rgba(0,_0,_0,_0.04),_0px_3px_1.6px_0px_rgba(0,_0,_0,_0.04),_0px_5px_2.9px_0px_rgba(0,_0,_0,_0.05),_0px_9px_5.3px_0px_rgba(0,_0,_0,_0.05),_0px_15px_10.4px_0px_rgba(0,_0,_0,_0.05),_0px_31px_22.8px_0px_rgba(0,_0,_0,_0.05)]">
+            <div className="flex  gap-[20px] p-[10px] z-50 relative translate-x-[-20px] rounded-[12.96px] bg-[#FFF] [box-shadow:0px_1px_0.4px_0px_rgba(0,_0,_0,_0.03),_0px_2px_0.8px_0px_rgba(0,_0,_0,_0.04),_0px_3px_1.6px_0px_rgba(0,_0,_0,_0.04),_0px_5px_2.9px_0px_rgba(0,_0,_0,_0.05),_0px_9px_5.3px_0px_rgba(0,_0,_0,_0.05),_0px_15px_10.4px_0px_rgba(0,_0,_0,_0.05),_0px_31px_22.8px_0px_rgba(0,_0,_0,_0.05)]">
               <Link
                 href="https://www.linkedin.com/company/bytecraft-club/mycompany/"
-                className="flex flex-col gap-1 justify-center items-center"
+                className="flex  flex-col relative z-50 gap-1 justify-center items-center"
+                target="_blank"
               >
                 <FaLinkedin className="text-[#0a66c2] text-[22px]" />
-                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                <span className="text-[10px] hover:underline font-inter text-[#9D9D9D]">
                   Linkedin
                 </span>
               </Link>
               <Link
                 href="https://www.facebook.com/ByteCraftEstin"
                 className="flex flex-col gap-1 justify-center items-center"
+                target="_blank"
               >
                 <FaFacebook className="text-[#1877f2] text-[22px]" />
-                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                <span className="text-[10px] hover:underline font-inter text-[#9D9D9D]">
                   Facebook
                 </span>
               </Link>
               <Link
                 href="https://www.instagram.com/bytecraft.estin/"
                 className="flex flex-col gap-1 justify-center items-center"
+                target="_blank"
               >
                 <FaInstagramSquare className="text-[#c13584] text-[22px]" />
-                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                <span className="text-[10px] hover:underline font-inter text-[#9D9D9D]">
                   Instagram
                 </span>
               </Link>
               <Link
                 href="https://www.youtube.com/@BytecraftClub"
                 className="flex flex-col gap-1 justify-center items-center"
+                target="_blank"
               >
                 <FaYoutube className="text-[#ff0000] text-[22px]" />
-                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                <span className="text-[10px] hover:underline font-inter text-[#9D9D9D]">
                   Youtube
                 </span>
               </Link>
@@ -243,7 +248,7 @@ const Boxes = () => {
         <CustomCursor
           name={"Mehdi"}
           classDiv={
-            "animate-bounce absolute right-[135px] top-[160px] z-[50] pl-[50px]"
+            "animate-bounce absolute right-[120px] top-[160px] curs6 z-[50] pl-[50px]"
           }
           classCursor={"w-[30px] rotate-[deg]"}
           classForName={
@@ -252,7 +257,9 @@ const Boxes = () => {
         />
         <CustomCursor
           name={"Abdou"}
-          classDiv={"animate-bounce absolute right-[200px] bottom-[26%] z-[50]"}
+          classDiv={
+            "animate-bounce absolute right-[140px] curs4 bottom-[26%] z-[50]"
+          }
           classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
@@ -260,7 +267,9 @@ const Boxes = () => {
         />
         <CustomCursor
           name={"Yacine"}
-          classDiv={"animate-bounce absolute left-[160px] bottom-[44%] z-[50]"}
+          classDiv={
+            "animate-bounce absolute left-[120px] bottom-[40%] curs5 z-[50]"
+          }
           classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"

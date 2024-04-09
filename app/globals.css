@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   height: 100%;
-  width: 60%;
+  width: 64%;
 }
 
 .box-0 {
@@ -120,10 +120,28 @@ body::-webkit-scrollbar {
   .resp {
     font-size: 79px;
   }
+  .cur1 {
+    right: 14%;
+  }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1260px) {
   .angry-grid {
     width: 80%;
   }
+  .curs4{
+    right: 20px;
+  }
+  .curs5{
+    left: 40px;
+    bottom: 30%;
+  }
+  .curs6{
+    top: 200px;
+    right: 20px;
+  }
+}
+
+@media (min-height: 1441px) and (min-width: 800px) {
+  
 }
