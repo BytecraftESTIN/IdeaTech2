@@ -18,12 +18,15 @@ const HomePage = () => {
   };
 
   return (
-    <section className="h-screen w-[100%] flex justify-center items-center section">
-      <div className="w-[90vw] h-[86vh] max-md:h-[80vh] flex flex-col justify-center items-center back rounded-[40px] relative">
+    <section
+      id="homepage"
+      className="h-screen w-[100%] flex justify-center items-center section"
+    >
+      <div className="relative w-[90vw] h-[86vh] flex flex-col justify-center items-center overflow-hidden back rounded-[40px] max-md:gap-[20px] max-md:h-[100vh] max-md:w-[100vw] max-md:rounded-none">
         <Image
           src={logos}
           alt="two logo"
-          className="w-[100px] max-md:w-[130px]"
+          className="w-[100px] max-md:w-[150px]"
         />
         <div>
           <h1 className="resp text-[#242424] mt-[30px] font-clashDisplay font-medium text-center text-[80.024px] leading-[110px] tracking-[0.997px] max-md:hidden">
@@ -44,7 +47,7 @@ const HomePage = () => {
             <span className="text-center relative z-[5]">together</span>
           </h1>
         </div>
-        <h2 className="hidden max-md:!block mt-[80px] mb-[190px] text-[#242424] text-center font-clashDisplay text-[27px] font-semibold leading-[37px]">
+        <h2 className="hidden max-md:!block mt-[180px] mb-[250px] text-[#242424] text-center font-clashDisplay text-[32px] font-semibold leading-[37px]">
           For the best experience <br /> you should use the pc
         </h2>
         <p className="z-[99999] text-[#4D4D4D] font-inter text-center text-[13px] font-medium leading-[27px] mt-[28px] mb-[20px] max-md:hidden">
@@ -81,12 +84,12 @@ const HomePage = () => {
         <Image
           src={VectorMob}
           alt="Vector"
-          className="absolute top-[360px] w-[100%] hidden max-md:block"
+          className="absolute bottom-[-2%] w-[100%] hidden max-md:block"
         />
         <CustomCursor
           name={"Rayane"}
           classDiv={
-            "animate-bounce absolute right-[20%] top-[100px] z-[50] pl-[50px] max-md:top-[306px] max-md:right-[4%]"
+            "animate-bounce absolute right-[20%] top-[100px] z-[50] pl-[50px] max-md:top-[160px] max-md:right-[18%]"
           }
           classCursor={"w-[30px] rotate-[deg] max-md:ml-[12px]"}
           classForName={
@@ -96,7 +99,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Iyad"}
           classDiv={
-            "animate-bounce absolute right-[200px] bottom-[40%] z-[50] max-md:hidden"
+            "animate-bounce absolute right-[200px] bottom-[40%] z-[50] max-md:right-[220px]"
           }
           classCursor={"w-[30px]"}
           classForName={
@@ -106,7 +109,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Said"}
           classDiv={
-            "animate-bounce absolute left-[180px] bottom-[42%] z-[50] max-md:hidden"
+            "animate-bounce absolute left-[180px] bottom-[42%] z-[50] max-md:bottom-[2%] max-md:left-[300px]"
           }
           classCursor={"w-[30px]"}
           classForName={

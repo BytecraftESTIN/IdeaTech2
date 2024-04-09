@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import CustomCursor from "@/utils/CustomCursor";
@@ -19,32 +19,33 @@ import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import "../app/globals.css";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
 const Boxes = () => {
-
-      const eventDate = new Date("2024-04-19T18:00:00");
-      const calculateRemainingTime = () => {
-      const currentDate = new Date();
-      const timeDifference = eventDate - currentDate;
-      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      return { days, hours };
-    };
-    const [remainingTime, setRemainingTime] = useState(calculateRemainingTime);
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setRemainingTime(calculateRemainingTime);
-      }, 1000);
-      return () => clearInterval(interval);
-    }, []);
-
+  const eventDate = new Date("2024-04-19T18:00:00");
+  const calculateRemainingTime = () => {
+    const currentDate = new Date();
+    const timeDifference = eventDate - currentDate;
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    return { days, hours };
+  };
+  const [remainingTime, setRemainingTime] = useState(calculateRemainingTime);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRemainingTime(calculateRemainingTime);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
       id="boxes"
-      className=" h-screen w-[100%] flex justify-center items-center section max-md:hidden"
+      className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
+      {/* <Link href="#homepage"></Link> */}
       <div className="w-[90vw] py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
         <Image
           src={Vector}
@@ -61,7 +62,7 @@ const Boxes = () => {
               alt="ideatech"
               className=" z-[0] w-[240px] px-[26px] mx-[auto]"
             />
-            <div className="flex gap-[20px] p-[10px] z-20 translate-x-[-20px] rounded-[12.96px] bg-[#FFF] [box-shadow:0px_1px_0.4px_0px_rgba(0,_0,_0,_0.03),_0px_2px_0.8px_0px_rgba(0,_0,_0,_0.04),_0px_3px_1.6px_0px_rgba(0,_0,_0,_0.04),_0px_5px_2.9px_0px_rgba(0,_0,_0,_0.05),_0px_9px_5.3px_0px_rgba(0,_0,_0,_0.05),_0px_15px_10.4px_0px_rgba(0,_0,_0,_0.05),_0px_31px_22.8px_0px_rgba(0,_0,_0,_0.05)]">
+            <div className="flex w-[256px] gap-[20px] p-[10px] z-20 translate-x-[-20px] rounded-[12.96px] bg-[#FFF] [box-shadow:0px_1px_0.4px_0px_rgba(0,_0,_0,_0.03),_0px_2px_0.8px_0px_rgba(0,_0,_0,_0.04),_0px_3px_1.6px_0px_rgba(0,_0,_0,_0.04),_0px_5px_2.9px_0px_rgba(0,_0,_0,_0.05),_0px_9px_5.3px_0px_rgba(0,_0,_0,_0.05),_0px_15px_10.4px_0px_rgba(0,_0,_0,_0.05),_0px_31px_22.8px_0px_rgba(0,_0,_0,_0.05)]">
               <Link
                 href="https://www.linkedin.com/company/bytecraft-club/mycompany/"
                 className="flex flex-col gap-1 justify-center items-center"
@@ -267,6 +268,7 @@ const Boxes = () => {
           }
         />
       </div>
+      {/* <Link href="mentors"></Link> */}
     </section>
   );
 };
