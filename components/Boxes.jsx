@@ -21,6 +21,7 @@ import { IoIosArrowDropleftCircle } from "react-icons/io";
 import "../app/globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Boxes = () => {
   const eventDate = new Date("2024-04-19T08:00:00");
@@ -47,10 +48,10 @@ const Boxes = () => {
       className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
       <Link
-        href="#home"
-        className="absolute top-[50%] translate-y-[-50%] left-6 text-[36px] text-[#a196ff]"
+        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button-left -translate-x-7 md:flex hidden"
+        href={"#home"}
       >
-        <IoIosArrowDropleftCircle />
+        <FaArrowRightLong className="rotate-180" />
       </Link>
       <div className="w-[90vw] py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
         <Image
@@ -296,10 +297,11 @@ const Boxes = () => {
         />
       </div>
       <Link
-        href="#sponsors"
-        className="absolute top-[50%] translate-y-[-50%] right-6 text-[36px] text-[#a196ff]"
+        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button translate-x-7 md:flex hidden"
+        href={"#sponsors"}
       >
-        <IoIosArrowDroprightCircle />
+        <FaArrowRightLong className="" />
+
       </Link>
     </section>
   );

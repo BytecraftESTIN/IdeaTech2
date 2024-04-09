@@ -44,6 +44,44 @@ body::-webkit-scrollbar {
   width: 64%;
 }
 
+.box-shadow-button {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: moveLeftAndRight 1s infinite;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.box-shadow-button-left {
+  box-shadow: rgba(100, 100, 111, 0.2) -7px 7px 29px 0px;
+  animation: moveLeftAndRight-left 1s infinite;
+}
+
+@keyframes moveLeftAndRight-left {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes moveLeftAndRight {
+  0% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
 .box-0 {
   grid-row-start: 1;
   grid-column-start: 1;
@@ -108,7 +146,8 @@ body::-webkit-scrollbar {
   animation-delay: 0.2s;
 }
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -129,19 +168,18 @@ body::-webkit-scrollbar {
   .angry-grid {
     width: 80%;
   }
-  .curs4{
+  .curs4 {
     right: 20px;
   }
-  .curs5{
+  .curs5 {
     left: 40px;
     bottom: 30%;
   }
-  .curs6{
+  .curs6 {
     top: 200px;
     right: 20px;
   }
 }
 
 @media (min-height: 1441px) and (min-width: 800px) {
-  
 }
