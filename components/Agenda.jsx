@@ -30,6 +30,7 @@ const Agenda = () => {
         <Link
           href="https://docs.google.com/forms/d/e/1FAIpQLSfx7fW0WzsI3B4uEmme6sJGF2kMK59YGzQKs3wgLxkEf58vCw/viewform"
           className="z-[1000] flex w-[304px] h-[54px] justify-center items-center gap-[20px] rounded-[20px] bg-[radial-gradient(70.71%_70.71%_at_50%_50%,_#303030_0%,_#000_100%)] hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 max-md:w-[210px] max-md:rounded-[14px]"
+          target="_blank"
         >
           <span className="text-center text-[17px] font-clashDisplay font-normal leading-[normal] capitalize text-[#F5F5F5] max-md:text-[16px]">
             Register Now
