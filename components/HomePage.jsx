@@ -24,9 +24,6 @@ const HomePage = () => {
       className="h-screen w-[100%] flex justify-center items-center section"
       id="home"
     >
-      <div className="relative w-[90vw] h-[86vh] flex flex-col justify-center items-center overflow-hidden back rounded-[40px] max-md:gap-[20px] max-md:h-[100vh] max-md:w-[100vw] max-md:rounded-none">
-      className="relative h-screen w-[100%] flex justify-center md:items-center section"
-    >
       <div className="relative w-[90vw] h-[86vh] flex flex-col justify-center items-center overflow-hidden back rounded-[40px] max-md:gap-[20px] max-md:mt-16">
         <Image
           src={logos}
@@ -127,7 +124,6 @@ const HomePage = () => {
         href={"#boxes"}
       >
         <FaArrowRightLong className="" />
-  
       </Link>
     </section>
   );
