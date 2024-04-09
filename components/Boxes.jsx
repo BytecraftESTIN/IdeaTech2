@@ -233,17 +233,17 @@ const Boxes = () => {
           </article>
           <Link href="#agenda" className="z-50">
             <article className="relative overflow-hidden box-5 w-full h-full bg-[#B8CEDC]">
-              <div className="pt-[6px] px-[12px]">
+              <div className="pt-[6px] px-[16px]">
                 <h1 className="text-[#184363] font-clashDisplay font-semibold Box-Title">
                   Agenda
                 </h1>
                 <p className="Box-Desc font-inter font-medium text-[#184363]">
                   Wait for us one
-                  <span className=" text-white p-1 rounded-xl bg-[#4355FA]">
-                    19th,
-                  </span>
+                  <span className=" text-white p-1 ml-1 rounded-xl bg-[#4355FA]">
+                    19th
+                  </span>,
                   <br />
-                  <span className=" text-white p-1 rounded-xl bg-[#4355FA]">
+                  <span className=" text-white p-1 mr-1 rounded-xl bg-[#4355FA]">
                     20th
                   </span>
                   and April 2024
@@ -252,12 +252,12 @@ const Boxes = () => {
                   <Image
                     src={calenderDown}
                     alt="calander down"
-                    className="absolute size-[12rem] left-0"
+                    className="absolute bottom-[-102px] left-0"
                   />
                   <Image
                     src={calenderUp}
                     alt="calanader up"
-                    className="absolute right-[0px] size-[8rem] bottom-[-13px]"
+                    className="absolute bottom-[-102px] right-[-2px]"
                   />
                 </div>
               </div>
