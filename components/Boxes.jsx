@@ -56,7 +56,7 @@ const Boxes = () => {
         <Image
           src={Vector}
           alt="Vector"
-          className="absolute z-20 w-full [100vw] top-[60px]"
+          className="absolute z-10 w-full [100vw] top-[60px]"
         />
         <section className="angry-grid">
           <article className="box-0 z-[30] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
@@ -68,40 +68,44 @@ const Boxes = () => {
               alt="ideatech"
               className=" z-[0] w-[240px] px-[26px] mx-[auto]"
             />
-            <div className="flex w-[256px] gap-[20px] p-[10px] z-20 translate-x-[-20px] rounded-[12.96px] bg-[#FFF] [box-shadow:0px_1px_0.4px_0px_rgba(0,_0,_0,_0.03),_0px_2px_0.8px_0px_rgba(0,_0,_0,_0.04),_0px_3px_1.6px_0px_rgba(0,_0,_0,_0.04),_0px_5px_2.9px_0px_rgba(0,_0,_0,_0.05),_0px_9px_5.3px_0px_rgba(0,_0,_0,_0.05),_0px_15px_10.4px_0px_rgba(0,_0,_0,_0.05),_0px_31px_22.8px_0px_rgba(0,_0,_0,_0.05)]">
+            <div className="flex  gap-[20px] p-[10px] z-50 relative translate-x-[-20px] rounded-[12.96px] bg-[#FFF] [box-shadow:0px_1px_0.4px_0px_rgba(0,_0,_0,_0.03),_0px_2px_0.8px_0px_rgba(0,_0,_0,_0.04),_0px_3px_1.6px_0px_rgba(0,_0,_0,_0.04),_0px_5px_2.9px_0px_rgba(0,_0,_0,_0.05),_0px_9px_5.3px_0px_rgba(0,_0,_0,_0.05),_0px_15px_10.4px_0px_rgba(0,_0,_0,_0.05),_0px_31px_22.8px_0px_rgba(0,_0,_0,_0.05)]">
               <Link
                 href="https://www.linkedin.com/company/bytecraft-club/mycompany/"
-                className="flex flex-col gap-1 justify-center items-center"
+                className="flex  flex-col relative z-50 gap-1 justify-center items-center"
+                target="_blank"
               >
                 <FaLinkedin className="text-[#0a66c2] text-[22px]" />
-                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                <span className="text-[10px] hover:underline font-inter text-[#9D9D9D]">
                   Linkedin
                 </span>
               </Link>
               <Link
                 href="https://www.facebook.com/ByteCraftEstin"
                 className="flex flex-col gap-1 justify-center items-center"
+                target="_blank"
               >
                 <FaFacebook className="text-[#1877f2] text-[22px]" />
-                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                <span className="text-[10px] hover:underline font-inter text-[#9D9D9D]">
                   Facebook
                 </span>
               </Link>
               <Link
                 href="https://www.instagram.com/bytecraft.estin/"
                 className="flex flex-col gap-1 justify-center items-center"
+                target="_blank"
               >
                 <FaInstagramSquare className="text-[#c13584] text-[22px]" />
-                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                <span className="text-[10px] hover:underline font-inter text-[#9D9D9D]">
                   Instagram
                 </span>
               </Link>
               <Link
                 href="https://www.youtube.com/@BytecraftClub"
                 className="flex flex-col gap-1 justify-center items-center"
+                target="_blank"
               >
                 <FaYoutube className="text-[#ff0000] text-[22px]" />
-                <span className="text-[10px] font-inter text-[#9D9D9D]">
+                <span className="text-[10px] hover:underline font-inter text-[#9D9D9D]">
                   Youtube
                 </span>
               </Link>
@@ -180,7 +184,7 @@ const Boxes = () => {
                 <Image
                   src={sponsorImage}
                   alt="Custom UI"
-                  className=" h-full w-full rounded-t-[40px] h-[100%] top-0"
+                  className=" h-full w-full rounded-t-[40px]"
                 />
               </div>
               <div className="px-[26px]">
@@ -212,7 +216,7 @@ const Boxes = () => {
               </div>
             </article>
           </Link>
-          <article className="box-4 z-50 h-[182px] overflow-hidden relative px-[26px] py-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
+          <article className="box-4 z-50  overflow-hidden relative px-[26px] py-[16px] flex flex-col justify-end w-full h-full bg-[#F9A474]">
             <div className="z-50 ">
               <h1 className="text-[#582614] font-clashDisplay font-semibold Box-Title">
                 About <br /> Bytecraft
@@ -229,18 +233,31 @@ const Boxes = () => {
           </article>
           <Link href="#agenda" className="z-50">
             <article className="relative overflow-hidden box-5 w-full h-full bg-[#B8CEDC]">
-              <div className="pt-[12px] px-[22px]">
+              <div className="pt-[6px] px-[12px]">
                 <h1 className="text-[#184363] font-clashDisplay font-semibold Box-Title">
                   Agenda
                 </h1>
                 <p className="Box-Desc font-inter font-medium text-[#184363]">
-                  Wait for us on 19th,20th <br /> April 2024
+                  Wait for us one
+                  <span className=" text-white p-1 rounded-xl bg-[#4355FA]">
+                    19th,
+                  </span>
+                  <br />
+                  <span className=" text-white p-1 rounded-xl bg-[#4355FA]">
+                    20th
+                  </span>
+                  and April 2024
                 </p>
                 <div className="">
-                  <Image src={calenderDown} className="absolute left-0" />
+                  <Image
+                    src={calenderDown}
+                    alt="calander down"
+                    className="absolute size-[12rem] left-0"
+                  />
                   <Image
                     src={calenderUp}
-                    className="absolute right-[0px] bottom-[-100px]"
+                    alt="calanader up"
+                    className="absolute right-[0px] size-[8rem] bottom-[-13px]"
                   />
                 </div>
               </div>

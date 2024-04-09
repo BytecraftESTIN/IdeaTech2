@@ -74,7 +74,7 @@ const HomePage = () => {
               transition: { duration: 2, repeat: Infinity },
             }}
           >
-            <Image src={mouse} className="max-md:hidden" />
+            <Image src={mouse} alt="mouse icon" className="max-md:hidden" />
           </motion.div>
         </Link>
         <Image
