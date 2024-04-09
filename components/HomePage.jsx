@@ -19,7 +19,6 @@ const HomePage = () => {
 
   return (
     <section
-      id="homepage"
       className="h-screen w-[100%] flex justify-center items-center section"
     >
       <div className="relative w-[90vw] h-[86vh] flex flex-col justify-center items-center overflow-hidden back rounded-[40px] max-md:gap-[20px] max-md:h-[100vh] max-md:w-[100vw] max-md:rounded-none">
