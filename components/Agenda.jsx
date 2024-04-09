@@ -6,6 +6,7 @@ import Link from "next/link";
 import mouse from "../public/mouse.svg";
 import logos from "../public/Frame.png";
 import { motion } from "framer-motion";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 import "../app/globals.css";
 
 const Agenda = () => {
@@ -14,12 +15,14 @@ const Agenda = () => {
       id="agenda"
       className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
+      <Link
+        href="#mentors"
+        className="absolute top-[50%] translate-y-[-50%] left-6 text-[36px] text-[#a196ff]"
+      >
+        <IoIosArrowDropleftCircle />
+      </Link>
       <div className="w-[90vw] h-[86vh] flex flex-col justify-center items-center back rounded-[40px] relative">
-        <Image
-          src={logos}
-          alt="two logo"
-          className="w-[120px]"
-        />
+        <Image src={logos} alt="two logo" className="w-[120px]" />
         <h1 className="z-20 text-[#242424] m-[40px] flex gap-[20px] font-clashDisplay font-medium text-center text-[80.024px] leading-[110px] tracking-[0.997px]">
           Coming Soon <LoadingAnimation />
         </h1>

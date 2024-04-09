@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import CustomCursor from "@/utils/CustomCursor";
 import Ideatech from "../public/Ideatech Logo SVG 3.png";
-import CustomeUI from "../public/div.customization-ui.png";
 import MentorsImage from "../public/mentors.png";
 import AboutImage from "../public/About-Byte.png";
 import sponsorImage from "../public/sponsor.png";
@@ -17,12 +16,14 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 import "../app/globals.css";
 import Image from "next/image";
 import Link from "next/link";
 
 const Boxes = () => {
-  const eventDate = new Date("2024-04-19T18:00:00");
+  const eventDate = new Date("2024-04-19T08:00:00");
   const calculateRemainingTime = () => {
     const currentDate = new Date();
     const timeDifference = eventDate - currentDate;
@@ -45,6 +46,12 @@ const Boxes = () => {
       id="boxes"
       className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
+      <Link
+        href="#home"
+        className="absolute top-[50%] translate-y-[-50%] left-6 text-[36px] text-[#a196ff]"
+      >
+        <IoIosArrowDropleftCircle />
+      </Link>
       <div className="w-[90vw] py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
         <Image
           src={Vector}
@@ -52,7 +59,7 @@ const Boxes = () => {
           className="absolute z-20 w-full [100vw] top-[60px]"
         />
         <section className="angry-grid">
-          <article className="box-0 z-[10] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
+          <article className="box-0 z-[30] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
             <h1 className="px-[26px] text-[20px] whitespace-nowrap text-[#52225E] font-clashDisplay font-semibold">
               About IdeaTech
             </h1>
@@ -252,7 +259,9 @@ const Boxes = () => {
         />
         <CustomCursor
           name={"Abdou"}
-          classDiv={"animate-bounce absolute right-[140px] curs4 bottom-[26%] z-[50]"}
+          classDiv={
+            "animate-bounce absolute right-[140px] curs4 bottom-[26%] z-[50]"
+          }
           classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
@@ -260,13 +269,21 @@ const Boxes = () => {
         />
         <CustomCursor
           name={"Yacine"}
-          classDiv={"animate-bounce absolute left-[120px] bottom-[40%] curs5 z-[50]"}
+          classDiv={
+            "animate-bounce absolute left-[120px] bottom-[40%] curs5 z-[50]"
+          }
           classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
           }
         />
       </div>
+      <Link
+        href="#sponsors"
+        className="absolute top-[50%] translate-y-[-50%] right-6 text-[36px] text-[#a196ff]"
+      >
+        <IoIosArrowDroprightCircle />
+      </Link>
     </section>
   );
 };

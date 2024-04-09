@@ -5,6 +5,8 @@ import LoadingAnimation from "@/utils/LoadingAnimation";
 import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
 import { motion } from "framer-motion";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 import Link from "next/link";
 import "../app/globals.css";
 
@@ -12,14 +14,16 @@ const Mentors = () => {
   return (
     <section
       id="mentors"
-      className="h-screen w-[100%] flex justify-center items-center section max-md:hidden"
+      className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
+      <Link
+        href="#sponsors"
+        className="absolute top-[50%] translate-y-[-50%] left-6 text-[36px] text-[#a196ff]"
+      >
+        <IoIosArrowDropleftCircle />
+      </Link>
       <div className="w-[90vw] h-[86vh] flex flex-col justify-center items-center back rounded-[40px] relative">
-        <Image
-          src={logos}
-          alt="two logo"
-          className="w-[120px]"
-        />
+        <Image src={logos} alt="two logo" className="w-[120px]" />
         <h1 className="z-20 text-[#242424] flex gap-[20px] m-[40px] font-clashDisplay font-medium text-center text-[80.024px] leading-[110px] tracking-[0.997px]">
           Coming Soon <LoadingAnimation />
         </h1>
@@ -51,6 +55,12 @@ const Mentors = () => {
           className="absolute w-[100vw] top-[60px] z-10"
         />
       </div>
+      <Link
+        href="#agenda"
+        className="absolute top-[50%] translate-y-[-50%] right-6 text-[36px] text-[#a196ff]"
+      >
+        <IoIosArrowDroprightCircle />
+      </Link>
     </section>
   );
 };
