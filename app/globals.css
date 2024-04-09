@@ -90,13 +90,13 @@ body::-webkit-scrollbar {
 /* styles/LoadingAnimation.module.css */
 .loading {
   display: flex;
+  gap: 4px;
   align-items: center;
   margin-top: 36px;
 }
 .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width: 12px;
+  height: 12px;
   background-color: #333;
   margin-right: 4px;
   animation: bounce 1.5s infinite;
@@ -112,12 +112,18 @@ body::-webkit-scrollbar {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-16px);
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .resp {
     font-size: 79px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .angry-grid {
+    width: 80%;
   }
 }
