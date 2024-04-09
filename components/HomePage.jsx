@@ -5,10 +5,11 @@ import Image from "next/image";
 import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
 import Vector from "../public/Vector.png";
-import VectorMob from '../public/Vector Mobile.png'
+import VectorMob from "../public/Vector Mobile.png";
 import TypeWriter from "../utils/TypeWriter";
 import CustomCursor from "../utils/CustomCursor";
 import "../app/globals.css";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const HomePage = () => {
   const smoothScrollTo = (id) => {
@@ -18,7 +19,10 @@ const HomePage = () => {
   };
 
   return (
-    <section className="h-screen w-[100%] flex justify-center items-center section">
+    <section
+      className="h-screen w-[100%] flex justify-center items-center section"
+      id="home"
+    >
       <div className="relative w-[90vw] h-[86vh] flex flex-col justify-center items-center overflow-hidden back rounded-[40px] max-md:gap-[20px] max-md:h-[100vh] max-md:w-[100vw] max-md:rounded-none">
         <Image
           src={logos}
@@ -114,6 +118,12 @@ const HomePage = () => {
           }
         />
       </div>
+      <Link
+        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button translate-x-7 md:flex hidden"
+        href={"#boxes"}
+      >
+        <FaArrowRightLong className="" />
+      </Link>
     </section>
   );
 };

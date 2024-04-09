@@ -20,6 +20,7 @@ import { FaYoutube } from "react-icons/fa";
 import "../app/globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Boxes = () => {
   const eventDate = new Date("2024-04-19T08:00:00");
@@ -46,6 +47,12 @@ const Boxes = () => {
       id="boxes"
       className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
+      <Link
+        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button-left -translate-x-7 md:flex hidden"
+        href={"#home"}
+      >
+        <FaArrowRightLong className="rotate-180" />
+      </Link>
       <div className="w-[90vw] py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
         <Image
           src={Vector}
@@ -289,6 +296,12 @@ const Boxes = () => {
           }
         />
       </div>
+      <Link
+        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button translate-x-7 md:flex hidden"
+        href={"#sponsors"}
+      >
+        <FaArrowRightLong className="" />
+      </Link>
     </section>
   );
 };

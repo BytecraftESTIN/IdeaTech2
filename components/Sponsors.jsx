@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Vector from "../public/Vector.png";
 import LoadingAnimation from "@/utils/LoadingAnimation";
@@ -7,6 +7,7 @@ import mouse from "../public/mouse.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import "../app/globals.css";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Sponsors = () => {
   return (
@@ -14,12 +15,14 @@ const Sponsors = () => {
       id="sponsors"
       className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
+      <Link
+        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button-left -translate-x-7 md:flex hidden"
+        href={"#boxes"}
+      >
+        <FaArrowRightLong className="rotate-180" />
+      </Link>
       <div className="w-[90vw] h-[86vh] flex flex-col justify-center items-center back rounded-[40px] relative">
-        <Image
-          src={logos}
-          alt="two logo"
-          className="w-[120px]"
-        />
+        <Image src={logos} alt="two logo" className="w-[120px]" />
         <h1 className="z-20 text-[#242424] m-[40px] flex gap-[20px] font-clashDisplay font-medium text-center text-[80.024px] leading-[110px] tracking-[0.997px]">
           Coming Soon <LoadingAnimation />
         </h1>
@@ -51,6 +54,12 @@ const Sponsors = () => {
           className="absolute w-[100vw] top-[60px] z-10"
         />
       </div>
+      <Link
+        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button translate-x-7 md:flex hidden"
+        href={"#mentors"}
+      >
+        <FaArrowRightLong className="" />
+      </Link>
     </section>
   );
 };
