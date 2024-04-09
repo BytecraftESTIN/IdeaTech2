@@ -45,7 +45,6 @@ const Boxes = () => {
       id="boxes"
       className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
-      {/* <Link href="#homepage"></Link> */}
       <div className="w-[90vw] py-[16px] h-[90vh] flex justify-center items-center back rounded-[40px] relative">
         <Image
           src={Vector}
@@ -268,7 +267,6 @@ const Boxes = () => {
           }
         />
       </div>
-      {/* <Link href="mentors"></Link> */}
     </section>
   );
 };
