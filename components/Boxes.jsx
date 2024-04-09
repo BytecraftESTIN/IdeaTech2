@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import CustomCursor from "@/utils/CustomCursor";
 import Ideatech from "../public/Ideatech Logo SVG 3.png";
-import CustomeUI from "../public/div.customization-ui.png";
 import MentorsImage from "../public/mentors.png";
 import AboutImage from "../public/About-Byte.png";
 import sponsorImage from "../public/sponsor.png";
@@ -17,6 +16,8 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 import "../app/globals.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,7 +25,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Boxes = () => {
   const eventDate = new Date("2024-04-19T08:00:00");
-
   const calculateRemainingTime = () => {
     const currentDate = new Date();
     const timeDifference = eventDate - currentDate;
@@ -60,7 +60,7 @@ const Boxes = () => {
           className="absolute z-10 w-full [100vw] top-[60px]"
         />
         <section className="angry-grid">
-          <article className="box-0  z-[10] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
+          <article className="box-0 z-[30] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
             <h1 className="px-[26px] text-[20px] whitespace-nowrap text-[#52225E] font-clashDisplay font-semibold">
               About IdeaTech
             </h1>
@@ -301,6 +301,7 @@ const Boxes = () => {
         href={"#sponsors"}
       >
         <FaArrowRightLong className="" />
+
       </Link>
     </section>
   );

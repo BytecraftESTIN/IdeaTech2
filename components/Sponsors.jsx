@@ -6,6 +6,8 @@ import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 import "../app/globals.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -20,6 +22,7 @@ const Sponsors = () => {
         href={"#boxes"}
       >
         <FaArrowRightLong className="rotate-180" />
+
       </Link>
       <div className="w-[90vw] h-[86vh] flex flex-col justify-center items-center back rounded-[40px] relative">
         <Image src={logos} alt="two logo" className="w-[120px]" />
@@ -59,6 +62,7 @@ const Sponsors = () => {
         href={"#mentors"}
       >
         <FaArrowRightLong className="" />
+
       </Link>
     </section>
   );

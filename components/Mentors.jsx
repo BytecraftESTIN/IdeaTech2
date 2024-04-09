@@ -5,6 +5,8 @@ import LoadingAnimation from "@/utils/LoadingAnimation";
 import logos from "../public/Frame.png";
 import mouse from "../public/mouse.svg";
 import { motion } from "framer-motion";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 import Link from "next/link";
 import "../app/globals.css";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -13,13 +15,14 @@ const Mentors = () => {
   return (
     <section
       id="mentors"
-      className="h-screen w-[100%] flex justify-center items-center section max-md:hidden"
+      className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
     >
       <Link
         className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button-left -translate-x-7 md:flex hidden"
         href={"#sponsors"}
       >
         <FaArrowRightLong className="rotate-180" />
+
       </Link>
       <div className="w-[90vw] h-[86vh] flex flex-col justify-center items-center back rounded-[40px] relative">
         <Image src={logos} alt="two logo" className="w-[120px]" />
@@ -59,6 +62,7 @@ const Mentors = () => {
         href={"#agenda"}
       >
         <FaArrowRightLong className="" />
+
       </Link>
     </section>
   );

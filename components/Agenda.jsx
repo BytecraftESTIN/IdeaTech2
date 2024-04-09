@@ -6,6 +6,7 @@ import Link from "next/link";
 import mouse from "../public/mouse.svg";
 import logos from "../public/Frame.png";
 import { motion } from "framer-motion";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 import "../app/globals.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 
