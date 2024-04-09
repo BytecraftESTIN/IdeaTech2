@@ -243,7 +243,7 @@ const Boxes = () => {
         <CustomCursor
           name={"Mehdi"}
           classDiv={
-            "animate-bounce absolute right-[135px] top-[160px] z-[50] pl-[50px]"
+            "animate-bounce absolute right-[120px] top-[160px] curs6 z-[50] pl-[50px]"
           }
           classCursor={"w-[30px] rotate-[deg]"}
           classForName={
@@ -252,7 +252,7 @@ const Boxes = () => {
         />
         <CustomCursor
           name={"Abdou"}
-          classDiv={"animate-bounce absolute right-[200px] bottom-[26%] z-[50]"}
+          classDiv={"animate-bounce absolute right-[140px] curs4 bottom-[26%] z-[50]"}
           classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"
@@ -260,7 +260,7 @@ const Boxes = () => {
         />
         <CustomCursor
           name={"Yacine"}
-          classDiv={"animate-bounce absolute left-[160px] bottom-[44%] z-[50]"}
+          classDiv={"animate-bounce absolute left-[120px] bottom-[40%] curs5 z-[50]"}
           classCursor={"w-[30px]"}
           classForName={
             "rounded-[6px] py-[4px] px-[10px] bg-[#282828] [box-shadow:0px_1px_4px_0px_rgba(0,_0,_0,_0.25),_0px_-1px_9px_0px_rgba(103,_103,_103,_0.25)] text-[#FFF] font-clashDisplay text-[12px] font-semibold"

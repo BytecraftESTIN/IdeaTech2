@@ -18,9 +18,7 @@ const HomePage = () => {
   };
 
   return (
-    <section
-      className="h-screen w-[100%] flex justify-center items-center section"
-    >
+    <section className="h-screen w-[100%] flex justify-center items-center section">
       <div className="relative w-[90vw] h-[86vh] flex flex-col justify-center items-center overflow-hidden back rounded-[40px] max-md:gap-[20px] max-md:h-[100vh] max-md:w-[100vw] max-md:rounded-none">
         <Image
           src={logos}
@@ -88,7 +86,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Rayane"}
           classDiv={
-            "animate-bounce absolute right-[20%] top-[100px] z-[50] pl-[50px] max-md:top-[160px] max-md:right-[18%]"
+            "animate-bounce absolute right-[20%] top-[100px] z-[50] pl-[50px] cur1 max-md:top-[160px] max-md:right-[18%]"
           }
           classCursor={"w-[30px] rotate-[deg] max-md:ml-[12px]"}
           classForName={
@@ -98,7 +96,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Iyad"}
           classDiv={
-            "animate-bounce absolute right-[200px] bottom-[40%] z-[50] max-md:right-[220px]"
+            "animate-bounce absolute right-[200px] bottom-[36%] z-[50] cur2 max-md:right-[220px]"
           }
           classCursor={"w-[30px]"}
           classForName={
@@ -108,7 +106,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Said"}
           classDiv={
-            "animate-bounce absolute left-[180px] bottom-[42%] z-[50] max-md:bottom-[2%] max-md:left-[300px]"
+            "animate-bounce absolute left-[180px] bottom-[42%] z-[50] cur3 max-md:bottom-[2%] max-md:left-[300px]"
           }
           classCursor={"w-[30px]"}
           classForName={
