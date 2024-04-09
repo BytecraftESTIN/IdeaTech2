@@ -48,7 +48,7 @@ const HomePage = () => {
             <span className="text-center relative z-[5]">together</span>
           </h1>
         </div>
-        <h2 className="hidden max-md:!block mt-[180px] mb-[180px] text-[#242424] text-center font-clashDisplay text-[30px] font-semibold leading-[37px]">
+        <h2 className="hidden max-md:!block mt-[180px] mb-[180px] text-[#242424] text-center font-clashDisplay text-[29px] font-semibold leading-[37px]">
           For the best experience <br /> you should use the pc
         </h2>
         <p className="z-[99999] text-[#4D4D4D] font-inter text-center text-[13px] font-medium leading-[27px] mt-[28px] mb-[20px] max-md:hidden">
