@@ -60,7 +60,7 @@ const Boxes = () => {
           className="absolute z-10 w-full [100vw] top-[60px]"
         />
         <section className="angry-grid">
-          <article className="box-0 z-[30] py-[16px] flex justify-between flex-col w-full h-full bg-[#C3B2E7]">
+          <article className="box-0 z-[30] py-2 flex justify-between flex-col w-full h-full bg-[#B8CEDC]">
             <h1 className="px-[26px] text-[20px] whitespace-nowrap text-[#52225E] font-clashDisplay font-semibold">
               About IdeaTech
             </h1>
@@ -115,7 +115,7 @@ const Boxes = () => {
               ideatech is the best <br /> ideathon in the world
             </span>
           </article>
-          <article className="relative z-50 box-1 flex items-end p-[20px] w-full h-full bg-[#F682A5]">
+          <article className="relative z-50 box-1 flex items-end px-8 py-2 w-full h-full bg-[#F682A5]">
             <div>
               <h1 className="Box-Title text-[#52225E] font-clashDisplay font-semibold">
                 When
@@ -180,8 +180,8 @@ const Boxes = () => {
             </div>
           </article>
           <Link href="#sponsors" className="z-50">
-            <article className=" pb-[16px] box-3 w-full h-full flex flex-col justify-between bg-[#C9DA8F]">
-              <div className="h-[150px] w-full">
+            <article className=" pb-2 box-3 w-full h-full flex flex-col justify-between bg-[#C9DA8F]">
+              <div className="h-[130px] w-full">
                 <Image
                   src={sponsorImage}
                   alt="Custom UI"
@@ -200,7 +200,7 @@ const Boxes = () => {
           </Link>
           <Link href="#mentors" className="z-[1111]">
             <article className="box-2 z-50 flex flex-col w-full h-full bg-[#FEDF6F]">
-              <div className="px-[26px] pt-[16px]">
+              <div className="px-[26px] pt-2">
                 <h1 className="text-[#4A411E] Box-Title font-clashDisplay font-semibold">
                   Mentors
                 </h1>
@@ -242,7 +242,8 @@ const Boxes = () => {
                   Wait for us one
                   <span className=" text-white p-1 ml-1 rounded-xl bg-[#4355FA]">
                     19th
-                  </span>,
+                  </span>
+                  ,
                   <br />
                   <span className=" text-white p-1 mr-1 rounded-xl bg-[#4355FA]">
                     20th
@@ -301,7 +302,6 @@ const Boxes = () => {
         href={"#sponsors"}
       >
         <FaArrowRightLong className="" />
-
       </Link>
     </section>
   );

@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "wiggle 3s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "translateX(-30px)" },
+          "50%": { transform: "translateX(30px)" },
+        },
+      },
       fontFamily: {
         inter: ["var(--font-inter)"],
         clashDisplay: ["var(--font-clash-display)"],

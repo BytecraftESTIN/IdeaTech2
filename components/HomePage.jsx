@@ -92,7 +92,7 @@ const HomePage = () => {
         <CustomCursor
           name={"Rayane"}
           classDiv={
-            "animate-bounce absolute right-[20%] top-[100px] z-[50] pl-[50px] cur1 max-md:top-[160px] max-md:right-[18%]"
+            " animate-spin-slow absolute right-[20%] top-[100px] z-[50] pl-[50px] cur1 max-md:top-[160px] max-md:right-[18%]"
           }
           classCursor={"w-[30px] rotate-[deg] max-md:ml-[12px]"}
           classForName={
