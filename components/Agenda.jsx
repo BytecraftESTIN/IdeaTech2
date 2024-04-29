@@ -14,7 +14,7 @@ const Agenda = () => {
   return (
     <section
       id="agenda"
-      className="relative h-screen w-[100%] flex justify-center items-center section max-md:hidden"
+      className="relative h-screen w-[100%] flex justify-center items-center section hidden"
     >
       <Link
         className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button-left -translate-x-7 md:flex hidden"
