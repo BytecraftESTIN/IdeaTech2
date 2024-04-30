@@ -297,12 +297,6 @@ const Boxes = () => {
           }
         />
       </div>
-      <Link
-        className=" right-0 cursor-pointer z-50 items-center justify-center rounded-full bg-black text-white w-8 h-8  box-shadow-button translate-x-7 md:flex hidden"
-        href={"#sponsors"}
-      >
-        <FaArrowRightLong className="" />
-      </Link>
     </section>
   );
 };
